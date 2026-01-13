@@ -1,105 +1,292 @@
-/* Add these styles to your existing style.css file */
+/* அடிப்படை அமைப்புகள் */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Loading indicator */
-.loading-indicator {
+body {
+    font-family: 'Noto Sans Tamil', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* தலைப்பு பகுதி */
+header {
+    background: linear-gradient(135deg, #1e5799 0%, #207cca 100%);
+    color: white;
+    padding: 2rem 0;
     text-align: center;
-    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* முக்கிய உள்ளடக்கம் */
+main {
+    padding: 2rem 0;
+}
+
+.intro {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    border-right: 5px solid #1e5799;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* வடிகட்டு பகுதி */
+.filter-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
     color: #1e5799;
 }
 
-.loading-indicator i {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    animation: spin 1s linear infinite;
+.filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.filter-group select:hover, .filter-group select:focus {
+    border-color: #1e5799;
+    outline: none;
 }
 
-/* Error state */
-.error-state {
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+#book-count {
+    font-weight: 600;
+    color: #1e5799;
+    font-size: 1.1rem;
+}
+
+.year-badge {
+    background-color: #1e5799;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* நூல்கள் கட்டம் */
+.books-container {
+    min-height: 400px;
+}
+
+.loading {
     text-align: center;
-    padding: 50px;
-    color: #dc3545;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #1e5799;
 }
 
-.error-state i {
+.loading i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.no-books {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #666;
+}
+
+.no-books i {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    color: #ccc;
 }
 
-/* Highlight search results */
-.highlight {
-    background-color: #fff9c4;
-    padding: 2px 4px;
-    border-radius: 3px;
+.no-books p {
+    font-size: 1.2rem;
 }
 
-/* Improve table responsiveness */
-@media (max-width: 768px) {
-    #books-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    
-    #books-table thead {
-        display: none;
-    }
-    
-    #books-table tbody, #books-table tr, #books-table td {
-        display: block;
-        width: 100%;
-    }
-    
-    #books-table tr {
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 10px;
-        position: relative;
-    }
-    
-    #books-table td {
-        padding: 8px 10px;
-        text-align: left;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-    }
-    
-    #books-table td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        font-weight: bold;
-        color: #1e5799;
-    }
-    
-    #books-table td:last-child {
-        border-bottom: none;
-    }
-}
-
-/* Make the table more responsive for mobile */
-.mobile-label {
+.hidden {
     display: none;
 }
 
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-cover {
+    height: 180px;
+    background-color: #f0f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e5799;
+    font-size: 3.5rem;
+}
+
+.book-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #1e5799;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.book-details {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.book-details p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.book-details i {
+    width: 20px;
+    margin-right: 8px;
+    color: #1e5799;
+}
+
+.book-year {
+    display: inline-block;
+    background-color: #eef5ff;
+    color: #1e5799;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+/* முடிப்புப் பகுதி */
+footer {
+    background-color: #1a1a1a;
+    color: #ddd;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* பதிலளிக்கும் வடிவமைப்பு */
 @media (max-width: 768px) {
-    .mobile-label {
-        display: inline-block;
-        font-weight: bold;
-        min-width: 120px;
-        color: #1e5799;
+    header h1 {
+        font-size: 2rem;
     }
     
-    .table-container {
-        padding: 0 10px;
+    .filter-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .filter-group {
+        min-width: 100%;
+    }
+    
+    .books-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+        font-size: 1.7rem;
+        flex-direction: column;
+        gap: 10px;
     }
 }
