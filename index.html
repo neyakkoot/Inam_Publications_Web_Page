@@ -6,19 +6,42 @@
     <title>INAM PATHIPPAGAM - புத்தகங்களின் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Header with Logo -->
+        <!-- Header Section with Logo -->
         <header>
-            <div class="logo-header">
-                <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
-                     alt="INAM PATHIPPAGAM Logo" 
-                     class="logo"
-                     onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjMWU1Nzk5Ii8+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPklOQU08L3RleHQ+Cjwvc3ZnPgo=';">
-                <h1>INAM PATHIPPAGAM</h1>
+            <div class="header-content">
+                <div class="logo-title-container">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
+                             alt="INAM PATHIPPAGAM Logo" 
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiByeD0iNDAiIGZpbGw9IiMxZTU3OTkiLz4KPHRleHQgeD0iNDAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSI+SU5BTTwvdGV4dD4KPC9zdmc+'">
+                    </div>
+                    <div class="title-section">
+                        <h1><i class="fas fa-book"></i> INAM PATHIPPAGAM</h1>
+                        <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-book-open"></i>
+                        <span id="total-books">0</span>
+                        <p>மொத்த புத்தகங்கள்</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="year-range">2018 - 2024</span>
+                        <p>வெளியீட்டு ஆண்டுகள்</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-user-edit"></i>
+                        <span id="author-count">0</span>
+                        <p>நூலாசிரியர்கள்</p>
+                    </div>
+                </div>
             </div>
-            <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
         </header>
 
         <!-- Disclaimer -->
@@ -28,42 +51,41 @@
             <p class="english">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
         </div>
 
-        <!-- Search and Filter -->
+        <!-- Filters and Controls -->
         <div class="controls">
             <div class="search-box">
+                <i class="fas fa-search"></i>
                 <input type="text" id="search" placeholder="புத்தகம், ஆசிரியர் அல்லது ISBN எண் மூலம் தேடுக...">
-                <button id="search-btn"><i class="fas fa-search"></i></button>
             </div>
-            <div class="filters">
+            <div class="filter-controls">
                 <select id="year-filter">
                     <option value="all">அனைத்து ஆண்டுகள்</option>
+                    <!-- Years will be populated by JavaScript -->
                 </select>
-                <button id="reset-btn">மீட்டமை</button>
+                <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
             </div>
         </div>
 
         <!-- Books Table -->
         <div class="table-container">
             <div class="loading" id="loading">
-                <i class="fas fa-spinner fa-spin"></i> புத்தக பட்டியலை ஏற்றுகிறது...
+                <i class="fas fa-spinner fa-spin"></i> புத்தகங்களை ஏற்றுகிறது...
             </div>
-            
             <table id="books-table">
                 <thead>
                     <tr>
-                        <th>வ.எண்</th>
+                        <th>வரிசை எண்</th>
                         <th>புத்தகத்தின் பெயர்</th>
-                        <th>ஆசிரியர்</th>
+                        <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
                         <th>ISBN எண்</th>
                         <th>ஆண்டு</th>
                         <th>வெளியீட்டு தேதி</th>
                     </tr>
                 </thead>
                 <tbody id="books-tbody">
-                    <!-- Books loaded here -->
+                    <!-- Books will be loaded here by JavaScript -->
                 </tbody>
             </table>
-            
             <div class="no-results" id="no-results">
                 <i class="fas fa-search"></i>
                 <p>தேடலுக்கு பொருந்தக்கூடிய புத்தகங்கள் எதுவும் கிடைக்கவில்லை.</p>
@@ -72,16 +94,22 @@
 
         <!-- Footer -->
         <footer>
-            <div class="footer-logo">
-                <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
-                     alt="INAM PATHIPPAGAM Logo"
-                     class="footer-logo-img"
-                     onerror="this.onerror=null; this.style.display='none'">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
+                         alt="INAM PATHIPPAGAM Logo"
+                         class="footer-logo-img"
+                         onerror="this.onerror=null; this.style.display='none'">
+                </div>
+                <div class="footer-text">
+                    <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+                    <p class="footer-info">இந்த பட்டியல் சரியான தகவல்களைக் கொண்டுள்ளதா என்பதை உறுதிப்படுத்த புத்தகங்களின் அசல் ஆவணங்களைச் சரிபார்க்கவும்.</p>
+                </div>
             </div>
-            <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
         </footer>
     </div>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
