@@ -5,6 +5,7 @@ const yearFilter = document.getElementById('year-filter');
 const resetFiltersBtn = document.getElementById('reset-filters');
 const noResultsDiv = document.getElementById('no-results');
 const totalBooksSpan = document.getElementById('total-books');
+const loadingIndicator = document.getElementById('loading-indicator');
 
 let allBooks = [];
 
@@ -17,12 +18,63 @@ document.addEventListener('DOMContentLoaded', function() {
     searchInput.addEventListener('input', filterBooks);
     yearFilter.addEventListener('change', filterBooks);
     resetFiltersBtn.addEventListener('click', resetFilters);
+    
+    // Set page title dynamically
+    document.title = "INAM PATHIPPAGAM - புத்தகங்களின் பட்டியல்";
 });
+
+// Function to show loading indicator
+function showLoading() {
+    if (loadingIndicator) {
+        loadingIndicator.style.display = 'block';
+    }
+    if (booksTbody) {
+        booksTbody.innerHTML = '';
+    }
+    const table = document.getElementById('books-table');
+    if (table) {
+        table.style.display = 'none';
+    }
+    if (noResultsDiv) {
+        noResultsDiv.style.display = 'none';
+    }
+}
+
+// Function to hide loading indicator
+function hideLoading() {
+    if (loadingIndicator) {
+        loadingIndicator.style.display = 'none';
+    }
+    const table = document.getElementById('books-table');
+    if (table) {
+        table.style.display = 'table';
+    }
+}
 
 // Function to load books from GitHub JSON
 async function loadBooksFromGitHub() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json');
+        showLoading();
+        
+        // GitHub raw JSON URL
+        const githubUrl = 'https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json';
+        
+        // Try direct fetch first
+        let response;
+        try {
+            response = await fetch(githubUrl, {
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    'Accept': 'application/json',
+                }
+            });
+        } catch (fetchError) {
+            console.log('Direct fetch failed, trying CORS proxy...');
+            // Fallback to CORS proxy if direct fetch fails
+            const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(githubUrl)}`;
+            response = await fetch(proxyUrl);
+        }
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -34,27 +86,61 @@ async function loadBooksFromGitHub() {
             allBooks = data.books;
             
             // Set total books count
-            totalBooksSpan.textContent = allBooks.length;
+            if (totalBooksSpan) {
+                totalBooksSpan.textContent = allBooks.length;
+            }
             
-            // Display all books initially
+            // Hide loading and display books
+            hideLoading();
             displayBooks(allBooks);
             
             // Populate year filter with unique years
             populateYearFilter(allBooks);
             
-            console.log(`Loaded ${allBooks.length} books successfully`);
+            console.log(`Loaded ${allBooks.length} books successfully from GitHub`);
+            
+            // Update stats with actual years range
+            updateStats(allBooks);
         } else {
             throw new Error('Invalid JSON structure');
         }
     } catch (error) {
         console.error('Error loading books from GitHub:', error);
-        displayError();
+        hideLoading();
+        displayError(error.message);
+    }
+}
+
+// Function to update stats with actual data
+function updateStats(books) {
+    if (!books || books.length === 0) return;
+    
+    // Get years range
+    const years = books.map(book => parseInt(book.year)).filter(year => !isNaN(year));
+    if (years.length > 0) {
+        const minYear = Math.min(...years);
+        const maxYear = Math.max(...years);
+        
+        // Update year range in stats
+        const yearSpan = document.querySelector('.stat:nth-child(2) span');
+        if (yearSpan) {
+            yearSpan.textContent = `${minYear} - ${maxYear}`;
+        }
+    }
+    
+    // Estimate number of authors (unique)
+    const authors = books.map(book => book.author_editor).filter(author => author);
+    const uniqueAuthors = [...new Set(authors)];
+    
+    const authorSpan = document.querySelector('.stat:nth-child(3) span');
+    if (authorSpan && uniqueAuthors.length > 0) {
+        authorSpan.textContent = `${uniqueAuthors.length}+`;
     }
 }
 
 // Function to populate year filter with unique years
 function populateYearFilter(books) {
-    const yearSelect = document.getElementById('year-filter');
+    if (!yearFilter) return;
     
     // Get unique years from books
     const years = [...new Set(books.map(book => book.year).filter(year => year))];
@@ -63,8 +149,8 @@ function populateYearFilter(books) {
     years.sort((a, b) => b - a);
     
     // Clear existing options except the first one
-    while (yearSelect.options.length > 1) {
-        yearSelect.remove(1);
+    while (yearFilter.options.length > 1) {
+        yearFilter.remove(1);
     }
     
     // Add year options
@@ -72,20 +158,26 @@ function populateYearFilter(books) {
         const option = document.createElement('option');
         option.value = year;
         option.textContent = year;
-        yearSelect.appendChild(option);
+        yearFilter.appendChild(option);
     });
 }
 
 // Function to display books in the table
 function displayBooks(books) {
+    if (!booksTbody) return;
+    
     booksTbody.innerHTML = '';
     
     if (books.length === 0) {
-        noResultsDiv.style.display = 'block';
+        if (noResultsDiv) {
+            noResultsDiv.style.display = 'block';
+        }
         return;
     }
     
-    noResultsDiv.style.display = 'none';
+    if (noResultsDiv) {
+        noResultsDiv.style.display = 'none';
+    }
     
     books.forEach(book => {
         const row = document.createElement('tr');
@@ -133,8 +225,8 @@ function formatDate(dateString) {
 
 // Function to filter books based on search and year
 function filterBooks() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const selectedYear = yearFilter.value;
+    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+    const selectedYear = yearFilter ? yearFilter.value : 'all';
     
     const filteredBooks = allBooks.filter(book => {
         // Check if book matches search term
@@ -154,22 +246,32 @@ function filterBooks() {
 
 // Function to reset all filters
 function resetFilters() {
-    searchInput.value = '';
-    yearFilter.value = 'all';
+    if (searchInput) searchInput.value = '';
+    if (yearFilter) yearFilter.value = 'all';
     displayBooks(allBooks);
 }
 
 // Function to display error message
-function displayError() {
+function displayError(errorMessage = '') {
+    if (!booksTbody) return;
+    
     booksTbody.innerHTML = `
         <tr>
             <td colspan="6" style="text-align: center; padding: 40px; color: #dc3545;">
                 <i class="fas fa-exclamation-circle" style="font-size: 3rem; margin-bottom: 15px;"></i>
                 <h3>தரவுகளை ஏற்ற முடியவில்லை</h3>
                 <p>புத்தக பட்டியலை GitHub இலிருந்து ஏற்றுவதில் பிரச்சனை ஏற்பட்டுள்ளது.</p>
-                <p>தயவு செய்து பின்னர் முயற்சிக்கவும்.</p>
+                <p>${errorMessage || 'தயவு செய்து பின்னர் முயற்சிக்கவும்.'}</p>
+                <button onclick="loadBooksFromGitHub()" style="margin-top: 15px; padding: 10px 20px; background: #1e5799; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <i class="fas fa-redo"></i> மீண்டும் முயற்சிக்கவும்
+                </button>
             </td>
         </tr>
     `;
-    noResultsDiv.style.display = 'none';
+    
+    if (noResultsDiv) {
+        noResultsDiv.style.display = 'none';
+    }
+    
+    hideLoading();
 }
