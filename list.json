@@ -1,0 +1,1959 @@
+{
+  "publisher": "INAM PATHIPPAGAM",
+  "disclaimer": "இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது. / Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.",
+  "books": [
+    {
+      "sr_no": 1,
+      "book_title": "MOBILE COMPUTING",
+      "author_editor": "P.R.PAMEELA RANI, A.LAVANYA, G.YASHODHA",
+      "isbn_number": "978-81-938982-9-1",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 2,
+      "book_title": "MICRO FINANCE",
+      "author_editor": "R.Kanchana, V.Suganya, G.Kowsalya Devi",
+      "isbn_number": "978-81-938982-8-4",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 3,
+      "book_title": "DATA MINING CONCEPTS AND ITS APPLICATIONS",
+      "author_editor": "M.USHA, V.LOGANAYAKI, J.GAYATHRI",
+      "isbn_number": "978-81-938982-7-7",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 4,
+      "book_title": "COMPANY LAW AND SECRETARIAL PRACTICE",
+      "author_editor": "B. KARTHIKEYAN, P. ASHOK, D. MYTHILI",
+      "isbn_number": "978-81-938982-6-0",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 5,
+      "book_title": "BUSINESS MATHEMATICS",
+      "author_editor": "J.NIRMALA, N.RAJA, Y.PREETHI CEON",
+      "isbn_number": "978-81-938982-5-3",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 6,
+      "book_title": "Madurai kaanjiyin Maanagar Madurai",
+      "author_editor": "A.Balakirshnan",
+      "isbn_number": "978-81-938982-4-6",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 7,
+      "book_title": "Sanga Ilakkiya Katturai Kathampam",
+      "author_editor": "Dr.G.Jagadeeswari",
+      "isbn_number": "978-81-938982-3-9",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 8,
+      "book_title": "THEDAL",
+      "author_editor": "S.MUNIYASAMY",
+      "isbn_number": "978-81-938982-2-2",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 9,
+      "book_title": "MIIKKOTPADU THOLKAAPPIYA MULAMUM URAIYUM",
+      "author_editor": "DR.T.SATHIYARAJ",
+      "isbn_number": "978-81-938982-1-5",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 10,
+      "book_title": "He is mine Remembering the teacher Memorandum of School Students for College Students",
+      "author_editor": "M.MUNEESMOORTHY",
+      "isbn_number": "978-81-938982-0-8",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 11,
+      "book_title": "Aram Thirukkuralum Manutharumamum",
+      "author_editor": "Dr.M.Uma Maheshwari",
+      "isbn_number": "978-81-943402-2-5",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 12,
+      "book_title": "Thedal",
+      "author_editor": "M.Mangai",
+      "isbn_number": "978-81-943402-3-2",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 13,
+      "book_title": "Ayvuch Sirparal 2",
+      "author_editor": "Dr.K.S.Paul Chanthiramohan, Dr.S.Samkithiyon, Dr.C.Kalaimikilan, Dr.P.Anand and Dr.R.Rajarajan",
+      "isbn_number": "978-81-943402-9-4",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 14,
+      "book_title": "Innovative Prospects and Technological Developments in Bio-science",
+      "author_editor": "Department of Biochemistry and Microbiology",
+      "isbn_number": "978-81-943402-8-7",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 15,
+      "book_title": "ONE MINUTE ELDER",
+      "author_editor": "N.NAVEEN PRAKASH, S.SABANA",
+      "isbn_number": "978-81-943402-7-0",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 16,
+      "book_title": "National level Conference on Recent Technologies in Computer Science and its Applications Proceedings",
+      "author_editor": "K.Kannan",
+      "isbn_number": "978-81-943402-6-3",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 17,
+      "book_title": "Ayvuch Siruparal 1",
+      "author_editor": "Dr.K.S.Paul Chanthiramohan, Dr.S.Samkithiyon, Dr.C.Kalaimikilan, Dr.P.Anand and Dr.R.Rajarajan,",
+      "isbn_number": "978-81-943402-5-6",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 18,
+      "book_title": "Anubavangalin Arthangal",
+      "author_editor": "S.TAMIL SELVAN",
+      "isbn_number": "978-81-943402-4-9",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 19,
+      "book_title": "An Analysis of ELT Aids",
+      "author_editor": "R. Nithya",
+      "isbn_number": "978-81-943402-1-8",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 20,
+      "book_title": "BASICS OF R PROGRAMMING LANGUAGE",
+      "author_editor": "S.Vijaya, P.Lavanya, R.Maneendhar",
+      "isbn_number": "978-81-943402-0-1",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 21,
+      "book_title": "ILAKKANAVIYAL OPPIYAL THOLKAPPIYAMUM BALAVIYAKARANAMUM",
+      "author_editor": "Dr.T.Sathiyaraj",
+      "isbn_number": "978-81-939766-8-5",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 22,
+      "book_title": "ILAKKANAVIYAL OPPIYAL THOLKAPPIYAMUM BALAVIYAKARANAMUM",
+      "author_editor": "Dr.T.Sathiyaraj",
+      "isbn_number": "978-81-939766-9-2",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 23,
+      "book_title": "Perunkarkalam (aivuraikal)",
+      "author_editor": "Dr.G.Balaji",
+      "isbn_number": "978-81-939766-7-8",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 24,
+      "book_title": "Unico",
+      "author_editor": "N.S.THAMIZHINI",
+      "isbn_number": "978-81-939766-6-1",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 25,
+      "book_title": "National Level Conference On RECENT TECHNOLOGIES IN COMPUTER SCIENCE AND ITS APPLICATION",
+      "author_editor": "M.RAJESKUMAR, M.SANGEETHA, K.KANNAN, M.AMRITHA",
+      "isbn_number": "978-81-939766-5-4",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 26,
+      "book_title": "Perunkarkaalat thamizhccamuukam Kiizhiruntu meelelum varalaaru",
+      "author_editor": "Dr.G.Balaji",
+      "isbn_number": "978-81-939766-4-7",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 27,
+      "book_title": "PANMUGA NOOKKIL SILAPPATHIKAARAM",
+      "author_editor": "DR.K.S.PAULCHANDRAN, DR.M.RAJASEKARAN, DR.P.SIVSSELVAN, DR.M.MUNEESMOORTHY",
+      "isbn_number": "978-81-939766-3-0",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 28,
+      "book_title": "Sanga Ilakkiya Katturai Kathampam",
+      "author_editor": "DR.K.S.PAULCHANDRAN, DR.M.RAJASEKARAN, DR.P.SIVSSELVAN, DR.M.MUNEESMOORTHY",
+      "isbn_number": "978-81-939766-2-3",
+      "year": "2019",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 29,
+      "book_title": "GLOBAL BUSINESS ENVIRONMENT Theories and Cases",
+      "author_editor": "Dr.R.Anuja, Dr.S.Lakshmipriya",
+      "isbn_number": "978-81-939766-1-6",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 30,
+      "book_title": "Visual Basic",
+      "author_editor": "D.SASIREGA, A.P CHRISTOPHER AROKIARAJ, J.POORNIMHA",
+      "isbn_number": "978-81-939766-0-9",
+      "year": "2018",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 31,
+      "book_title": "Sivappu Pattayam Thedi",
+      "author_editor": "R.Sugumari Rajam",
+      "isbn_number": "978-81-945691-0-7",
+      "year": "2020",
+      "publication_date": "",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 32,
+      "book_title": "Yaadumaaki Ninraai",
+      "author_editor": "Dr. M. Mythily",
+      "isbn_number": "978-81-949786-2-6",
+      "year": "2021",
+      "publication_date": "20/08/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 33,
+      "book_title": "THAMIZHAGA NAVEENA OVIYANGALUM OVIYARKALUM",
+      "author_editor": "Dr. S. SENTHAMIZH PAVAI",
+      "isbn_number": "978-81-949786-3-3",
+      "year": "2021",
+      "publication_date": "13/08/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 34,
+      "book_title": "YATRA OF MUSIC AND DANCE THROUGH AGES",
+      "author_editor": "Dr. S. SENTHAMIZH PAVAI",
+      "isbn_number": "978-81-949786-4-0",
+      "year": "2021",
+      "publication_date": "13/08/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 35,
+      "book_title": "INTRODUCTION TO DATA MINING",
+      "author_editor": "Dr.G.Yashodha, B.Jeevithapriya, S.Deepankumar",
+      "isbn_number": "978-81-949786-5-7",
+      "year": "2021",
+      "publication_date": "15/07/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 36,
+      "book_title": "INTRODUCTION TO COMPUTER NETWORKS",
+      "author_editor": "A.Lavanya, P.R.PameelaRani, N.Sowndharya",
+      "isbn_number": "978-81-949786-9-5",
+      "year": "2021",
+      "publication_date": "15/07/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 37,
+      "book_title": "THE FIRST GRAMMAR OF INDIAN LANGUAGES",
+      "author_editor": "Dr. Ch. Savithri",
+      "isbn_number": "978-81-949786-9-5",
+      "year": "2021",
+      "publication_date": "01/05/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 38,
+      "book_title": "PRINCIPLES OF MANAGEMENT",
+      "author_editor": "N. PARAMESSWARI",
+      "isbn_number": "978-81-949786-7-1",
+      "year": "2021",
+      "publication_date": "05/04/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 39,
+      "book_title": "Python Programming",
+      "author_editor": "Dr. S.Vijaya, P.Lavanya, R.Maneendhar",
+      "isbn_number": "978-81-949786-8-8",
+      "year": "2021",
+      "publication_date": "24/03/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 40,
+      "book_title": "Comparative Study VIZHUTHUGAL",
+      "author_editor": "T. Poorani",
+      "isbn_number": "978-81-949786-7-1",
+      "year": "2021",
+      "publication_date": "25/03/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 41,
+      "book_title": "A Comparative Studies on Telugu - Tamil Articles Uravunilai - Literature - Book review",
+      "author_editor": "Dr. A. Eswaran",
+      "isbn_number": "978-81-949786-6-4",
+      "year": "2021",
+      "publication_date": "22/03/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 42,
+      "book_title": "ENNIL PUTHAINTHAVAN THEEDI",
+      "author_editor": "Mrs Moon",
+      "isbn_number": "978-81-949786-1-9",
+      "year": "2020",
+      "publication_date": "28/12/2020",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 43,
+      "book_title": "Comparative Study Meta Theory Research Meta Theory Traditional Grammar book and Research book",
+      "author_editor": "Dr.T.Sathiyaraj",
+      "isbn_number": "978-81-949786-0-2",
+      "year": "2020",
+      "publication_date": "25/12/2020",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 44,
+      "book_title": "Nedunsaalai Thevathaigal",
+      "author_editor": "M. Vikram",
+      "isbn_number": "978-93-92293-85-6",
+      "year": "2023",
+      "publication_date": "01/01/1900",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 45,
+      "book_title": "ENGAL OOR VARALAARU(KARIAPTTIYAI SUTTRIYULLA KIRAMANGAL)",
+      "author_editor": "Dr.S.MUNIYASAMY, P.RAMALAKSHMI, A.KARTHIK",
+      "isbn_number": "978-93-92293-78-8",
+      "year": "2023",
+      "publication_date": "14/04/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 46,
+      "book_title": "CORONAVUM NAANUM (THOGUPPU KATTURAIGAL)",
+      "author_editor": "Dr.S.MUNIYASAMY, R. MATHAVAN, R. PONMUTHU RAMALINGAM",
+      "isbn_number": "978-93-92293-79-5",
+      "year": "2023",
+      "publication_date": "14/04/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 47,
+      "book_title": "Multidisciplinary Research and Innovation",
+      "author_editor": "Dr. R. Anuja",
+      "isbn_number": "978-93-92293-71-9",
+      "year": "2023",
+      "publication_date": "20/03/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 48,
+      "book_title": "THAMIZH MARAPIL URUM SERIUM",
+      "author_editor": "M. MUNEES MOORTHY",
+      "isbn_number": "978-93-92293-67-2",
+      "year": "2023",
+      "publication_date": "20/03/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 49,
+      "book_title": "VAIYATH THLAIMAI KOOL",
+      "author_editor": "R. RAVIPRASANTH",
+      "isbn_number": "978-93-92293-60-3",
+      "year": "2023",
+      "publication_date": "20/03/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 50,
+      "book_title": "MAALIGAI MEEDU AGAZHAAIVU ORU KANNOOTTAM",
+      "author_editor": "R. EZHI NILAVAN",
+      "isbn_number": "978-93-92293-59-7",
+      "year": "2023",
+      "publication_date": "20/03/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 51,
+      "book_title": "ARAI EN 305",
+      "author_editor": "SG. MANESA",
+      "isbn_number": "978-93-92293-68-9",
+      "year": "2023",
+      "publication_date": "20/03/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 52,
+      "book_title": "Fundamentals of Machine Learning",
+      "author_editor": "Dr.P.Ramachandran, A.Arulselvan Gnanamonickam",
+      "isbn_number": "978-93-92293-52-8",
+      "year": "2023",
+      "publication_date": "21/01/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 53,
+      "book_title": "Executive Business Communication",
+      "author_editor": "Dr.V.Devaki",
+      "isbn_number": "978-93-92293-43-6",
+      "year": "2023",
+      "publication_date": "14/02/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 54,
+      "book_title": "SIRUVAR ILAKKIACH CHINTHANAIKAL",
+      "author_editor": "Dr.A.PRASANTH",
+      "isbn_number": "978-93-92293-51-1",
+      "year": "2023",
+      "publication_date": "30/01/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 55,
+      "book_title": "IDATHUKAI KIRUKKAL",
+      "author_editor": "ESWARAN K.",
+      "isbn_number": "978-93-92293-44-3",
+      "year": "2023",
+      "publication_date": "30/01/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 56,
+      "book_title": "NIZHAL VIDUM OLI",
+      "author_editor": "A. BALAKRISHNAN",
+      "isbn_number": "978-93-92293-35-1",
+      "year": "2023",
+      "publication_date": "30/01/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 57,
+      "book_title": "PADIKKATHINGA NANGA PORUPPALLA",
+      "author_editor": "Sakthi Kavi Sumathi, J.Chandirapriya, Kavimukil Anuratha, R. Backiyaraj, Yazhamudhan Karthikeyan",
+      "isbn_number": "978-93-92293-36-8",
+      "year": "2023",
+      "publication_date": "01/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 58,
+      "book_title": "The Chola Era society (Gleaned from Mayiladuthurai Inscriptions 945-1260 C.E)",
+      "author_editor": "A. Aravalli",
+      "isbn_number": "978-93-92293-27-6",
+      "year": "2022",
+      "publication_date": "15/06/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 59,
+      "book_title": "Vetrik Kaakitham",
+      "author_editor": "S.N.Indhu",
+      "isbn_number": "978-93-92293-19-1",
+      "year": "2022",
+      "publication_date": "31/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 60,
+      "book_title": "Virtual International Conference on Advancements in Bio-science, Bio-prospecting, Bio-medicine and Bio-entrepreneurship ICBSPME-2022",
+      "author_editor": "Dr.P.Chitra, K.Madhanasundareswari",
+      "isbn_number": "978-93-92293-11-5",
+      "year": "2022",
+      "publication_date": "09/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 61,
+      "book_title": "Comparative studies in Telugu and Tamil",
+      "author_editor": "Dr. Ch. Savithri",
+      "isbn_number": "978-93-92293-03-0",
+      "year": "2022",
+      "publication_date": "22/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 62,
+      "book_title": "Traditional Grammatical Trends (Tamil and Telugu)",
+      "author_editor": "Dr. Ch. Savithri",
+      "isbn_number": "978-93-92293-95-5",
+      "year": "2022",
+      "publication_date": "27/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 63,
+      "book_title": "Viithi Naduvee Puththan",
+      "author_editor": "S.K. (SATHISH)",
+      "isbn_number": "978-93-92293-87-0",
+      "year": "2022",
+      "publication_date": "23/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 64,
+      "book_title": "Neenthath Theriyatha sila Meenkal",
+      "author_editor": "P. Ajith",
+      "isbn_number": "978-93-92293-66-5",
+      "year": "2022",
+      "publication_date": "05/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 65,
+      "book_title": "Wikisource and Tamil NLP",
+      "author_editor": "Dr. Sathiyaraj Thangasamy, R. LOGANATHAN",
+      "isbn_number": "978-93-92293-58-0",
+      "year": "2022",
+      "publication_date": "17/10/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 66,
+      "book_title": "Indian Language Grammars",
+      "author_editor": "Dr. Ch. Savithri",
+      "isbn_number": "978-93-92293-50-4",
+      "year": "2022",
+      "publication_date": "01/05/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 67,
+      "book_title": "Puranaanuuru kaattum kaiyarunilai",
+      "author_editor": "Dr.K.JEGATHEESHWARI",
+      "isbn_number": "978-93-92293-42-9",
+      "year": "2022",
+      "publication_date": "14/04/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 68,
+      "book_title": "Proceedings of the Two Day National Level Virtual Conference on Quality Enhancements and Best Practices in Higher Education Institutions on 8th, 9th April 2022",
+      "author_editor": "Dr. J. Priyadharshini",
+      "isbn_number": "978-93-92293-34-4",
+      "year": "2022",
+      "publication_date": "08/04/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 69,
+      "book_title": "IRATTAI KAAPPIYATHIL AVALA SUVAI",
+      "author_editor": "Dr.N.THAMIZHMOZHI",
+      "isbn_number": "978-93-92293-26-9",
+      "year": "2022",
+      "publication_date": "28/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 70,
+      "book_title": "Krishna Agnihothri ke Upanyason me chitrith naari samasyayen",
+      "author_editor": "Dr.A.P.NAGAMUTHUVEL",
+      "isbn_number": "978-93-92293-18-4",
+      "year": "2022",
+      "publication_date": "28/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 71,
+      "book_title": "Ms Office & Internet",
+      "author_editor": "P.Manonmani, D.Prabha & Dr.K.Vishnupriya",
+      "isbn_number": "978-93-92293-10-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 72,
+      "book_title": "Tally ERP - 9.0",
+      "author_editor": "Dr.K.Vishnupriya, P.Manonmani & D.Prabha",
+      "isbn_number": "978-93-92293-02-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 73,
+      "book_title": "Financial Accounting Package",
+      "author_editor": "D.Prabha, Dr.K.Vishnupriya & P.Manonmani",
+      "isbn_number": "978-93-92293-98-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 74,
+      "book_title": "Laboratory Manual for Physics Practical III Electronics Alone",
+      "author_editor": "Preskala M.Sc., M.Phil.,",
+      "isbn_number": "978-93-92293-84-9",
+      "year": "2022",
+      "publication_date": "25/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 75,
+      "book_title": "Laboratory Manual for Physics Core Practical - II",
+      "author_editor": "R. SUVITHA M.Sc., M.Phil., B.Ed.",
+      "isbn_number": "978-93-92293-76-4",
+      "year": "2022",
+      "publication_date": "25/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 76,
+      "book_title": "Laboratory Manual for Allied Physics Practical",
+      "author_editor": "P. Mahalakshmi M.Sc., M.Phil., B.Ed.",
+      "isbn_number": "978-93-92293-99-3",
+      "year": "2022",
+      "publication_date": "25/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 77,
+      "book_title": "RAANI THEENI",
+      "author_editor": "Dr.S.ANANDHI",
+      "isbn_number": "978-93-92293-93-1",
+      "year": "2022",
+      "publication_date": "25/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 78,
+      "book_title": "KALATHUR KAVITHAIKAL",
+      "author_editor": "Dr.S.ANANDHI",
+      "isbn_number": "978-93-92293-69-6",
+      "year": "2022",
+      "publication_date": "26/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 79,
+      "book_title": "Programming Lab - Java",
+      "author_editor": "Dr.V.Sathyavathy, V.Nithya",
+      "isbn_number": "978-93-92293-61-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 80,
+      "book_title": "ILAKKIYANKALIL MAN-MARAPU-MANUDAM",
+      "author_editor": "Dr.B.UMARANI, Dr.R.MADHANKUMAR, Dr.R.SURESH",
+      "isbn_number": "978-93-92293-56-6",
+      "year": "2022",
+      "publication_date": "28/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 81,
+      "book_title": "PC software",
+      "author_editor": "Dr.G.Karthiyayini, V.C.Pravenpriyaa, Dr.R.Giftleen",
+      "isbn_number": "978-93-92293-77-1",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 82,
+      "book_title": "JavaScript Lab",
+      "author_editor": "G.Saraniya, N.Sriram",
+      "isbn_number": "978-93-92293-94-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 83,
+      "book_title": "Web Designing Lab",
+      "author_editor": "N.Sriram, G.Saraniya",
+      "isbn_number": "978-93-92293-86-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 84,
+      "book_title": "Oracle Lab",
+      "author_editor": "V.Balakrishnan, Mr.V.Jeyakumar, V.Jenifer",
+      "isbn_number": "978-93-92293-65-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 85,
+      "book_title": "Tally and Internet Lab",
+      "author_editor": "S.Nazirabegum, G.Kowsalyadevi, R.Menaka, Archana kumar",
+      "isbn_number": "978-93-92293-57-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 86,
+      "book_title": "Ms Office Lab",
+      "author_editor": "Dr.J.K.Bharath, Dr.R.Kanchana, Dr.R.Perumalsamy",
+      "isbn_number": "978-93-92293-49-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 87,
+      "book_title": "Visual basic lab",
+      "author_editor": "V.Jenifer, V.Jeyakumar, V.Balakrishnan",
+      "isbn_number": "978-93-92293-41-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 88,
+      "book_title": "C++ Programming Lab",
+      "author_editor": "V.Jeyakumar, V.Balakrishnan, V.Jenifer",
+      "isbn_number": "978-93-92293-33-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 89,
+      "book_title": "Ms Office Lab",
+      "author_editor": "Dr.B.Karthikeyan, Dr.R.S.Sripoorni",
+      "isbn_number": "978-93-92293-25-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 90,
+      "book_title": "Tally Lab",
+      "author_editor": "Dr.M.Lavanya, S.Shalini",
+      "isbn_number": "978-93-92293-17-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 91,
+      "book_title": "MATLAB",
+      "author_editor": "Y.Preethi Ceon, Dr.V.Krishnaveni",
+      "isbn_number": "978-93-92293-09-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 92,
+      "book_title": "LATEX Lab",
+      "author_editor": "Y.Preethi Ceon, Dr.S.Sharmila",
+      "isbn_number": "978-93-92293-01-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 93,
+      "book_title": "C++ Programming Lab",
+      "author_editor": "Dr.D.Kavitha, G.Priyadarshini, D.Jeya Rani",
+      "isbn_number": "978-93-92293-84-9",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 94,
+      "book_title": "HTML, XML and JavaScript Lab",
+      "author_editor": "P.Suresh Kumar, R.Maneendhar",
+      "isbn_number": "978-93-92293-76-4",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 95,
+      "book_title": "Internet Basics Lab",
+      "author_editor": "Dr.S.Vijaya, P.Lavanya",
+      "isbn_number": "978-93-92293-99-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 96,
+      "book_title": "VB and Oracle Lab",
+      "author_editor": "Usha M, Dr.A.Gokilavani",
+      "isbn_number": "978-93-92293-93-1",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 97,
+      "book_title": "Algorithms and OOPS Lab",
+      "author_editor": "Viba Mary J.",
+      "isbn_number": "978-93-92293-91-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 98,
+      "book_title": "Advanced Java Programming Lab",
+      "author_editor": "Kalaikannan P.",
+      "isbn_number": "978-93-92293-90-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 99,
+      "book_title": "Data Mining using R Lab",
+      "author_editor": "Dr. Gomathi V.V.",
+      "isbn_number": "978-93-92293-83-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 100,
+      "book_title": "Python Programming Lab",
+      "author_editor": "Alwin Pinakas James",
+      "isbn_number": "978-93-92293-82-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 101,
+      "book_title": "Java Programming Lab",
+      "author_editor": "Kavitha M.",
+      "isbn_number": "978-93-92293-81-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 102,
+      "book_title": "RDBMS Lab",
+      "author_editor": "Dr. S. Kanagalakshmi",
+      "isbn_number": "978-93-92293-80-1",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 103,
+      "book_title": "Graphics and Multimedia Programming Lab",
+      "author_editor": "Dr. Gomathi V.V.",
+      "isbn_number": "978-93-92293-75-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 104,
+      "book_title": "Data Structures Lab",
+      "author_editor": "Arulselvan A.",
+      "isbn_number": "978-93-92293-74-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 105,
+      "book_title": "Assembly Language Programming Lab",
+      "author_editor": "M. Senthil Kumar, D. Antony Pradeesh",
+      "isbn_number": "978-93-92293-73-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 106,
+      "book_title": "Case Tools Lab",
+      "author_editor": "Dr.K.S.Maharasan, M.Vinod Kumar, C.B.Pavithra",
+      "isbn_number": "978-93-92293-72-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 107,
+      "book_title": "Web Programming Lab",
+      "author_editor": "Dr.D.Kavitha, D.Matilda, Dr.P.Vijaya Kumar",
+      "isbn_number": "978-93-92293-70-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 108,
+      "book_title": "Graphics and Multimedia Programming Lab",
+      "author_editor": "R.Romela, N.Karthika, G.Priyadarshini",
+      "isbn_number": "978-93-92293-69-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 109,
+      "book_title": "Graphics and Multimedia Programming Lab",
+      "author_editor": "R.Romela, N.Karthika, G.Priyadarshini",
+      "isbn_number": "978-93-92293-64-1",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 110,
+      "book_title": "C++ Programming Lab",
+      "author_editor": "Dr.D.Kavitha, G.Priyadarshini, D.Jeya Rani",
+      "isbn_number": "978-93-92293-63-4",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 111,
+      "book_title": "Software Testing Lab",
+      "author_editor": "D.Sasirega, K.Hemalatha, V.Sureshkumar",
+      "isbn_number": "978-93-92293-62-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 112,
+      "book_title": "Software Project Management Lab",
+      "author_editor": "A.P.Christopher, Dr.G.Paramasivam",
+      "isbn_number": "978-93-92293-61-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 113,
+      "book_title": "VB and Oracle Lab",
+      "author_editor": "Dr.A.Gokilavani",
+      "isbn_number": "978-93-92293-56-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 114,
+      "book_title": "Linux and Shell Programming Lab",
+      "author_editor": "Dr.R.Sarala, R.Aswanandini, J.Poornimha, Dr.P.Selvi",
+      "isbn_number": "978-93-92293-55-9",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 115,
+      "book_title": "DOT NET Programming Lab",
+      "author_editor": "L.Padmavathy, G.Gokilavani",
+      "isbn_number": "978-93-92293-54-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 116,
+      "book_title": "HTML, XML and JavaScript Lab",
+      "author_editor": "P.Suresh Kumar, R.Maneendhar",
+      "isbn_number": "978-93-92293-53-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 117,
+      "book_title": "Internet Basics Lab",
+      "author_editor": "Dr.S.Vijaya, P.Lavanya",
+      "isbn_number": "978-93-92293-48-1",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 118,
+      "book_title": "VB and Oracle Lab",
+      "author_editor": "Usha.M, Dr.A.Gokilavani",
+      "isbn_number": "978-93-92293-47-4",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 119,
+      "book_title": "Network Lab",
+      "author_editor": "A.Lavanya, P.R.PammelaRani",
+      "isbn_number": "978-93-92293-46-7",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 120,
+      "book_title": "Network Security and Management Lab",
+      "author_editor": "Dr.G.Yashodha, D.Sakthivel",
+      "isbn_number": "978-93-92293-45-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 121,
+      "book_title": "Programming Lab - C",
+      "author_editor": "Dr.K.Appathurai, S.Deepan Kumar, D.Padmapriya",
+      "isbn_number": "978-93-92293-40-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 122,
+      "book_title": "Electronic Communication Lab",
+      "author_editor": "M. Arun Prasad, M. Senthil Kumar",
+      "isbn_number": "978-93-92293-39-9",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 123,
+      "book_title": "Industrial and Power Electronics Lab",
+      "author_editor": "D. Antony Pradeesh, M. Senthil Kumar",
+      "isbn_number": "978-93-92293-38-2",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 124,
+      "book_title": "Microprocessor and Micro controller Lab",
+      "author_editor": "M. Senthil Kumar, S. Karthikeyan",
+      "isbn_number": "978-93-92293-37-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 125,
+      "book_title": "Computer Programming Lab",
+      "author_editor": "Dr. S. Vidhya, S.Deepan Kumar",
+      "isbn_number": "978-93-92293-32-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 126,
+      "book_title": "Electronic Circuits, Radio, TV and Instrumentation Lab",
+      "author_editor": "M. Arun Prasad, S. Karthikeyan",
+      "isbn_number": "978-93-92293-31-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 127,
+      "book_title": "Digital Electronics Lab",
+      "author_editor": "S. Karthikeyan, M. Arun Prasad",
+      "isbn_number": "978-93-92293-30-6",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 128,
+      "book_title": "Semiconductor Devices Lab",
+      "author_editor": "S. Karthikeyan, D. Antony Pradeesh",
+      "isbn_number": "978-93-92293-24-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 129,
+      "book_title": "Basic Electronics Lab",
+      "author_editor": "D. Antony Pradeesh, M. Arun Prasad",
+      "isbn_number": "978-93-92293-16-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 130,
+      "book_title": "Allied Chemistry - Lab Manual",
+      "author_editor": "Dr.D.Shalini",
+      "isbn_number": "978-93-92293-08-5",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 131,
+      "book_title": "Cell Biology, Bioinstrumentation and Microbiology - Lab Manual",
+      "author_editor": "Dr.M.Shanmugavadivu",
+      "isbn_number": "978-93-92293-00-9",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 132,
+      "book_title": "Genetics and Biochemistry - Lab Manual",
+      "author_editor": "Dr.D.Shalini, Dr. B.Sangeetha",
+      "isbn_number": "978-93-92293-29-0",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 133,
+      "book_title": "Microbial Biotechnology and rDNA Technology - Lab Manual",
+      "author_editor": "Dr.M.Shanmugavadivu, Dr.B.Sangeetha",
+      "isbn_number": "978-93-92293-28-3",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 134,
+      "book_title": "Immunology and Plant Tissue Culture - Lab Manual",
+      "author_editor": "Dr.M.Shanmugavadivu, Dr.S.Jayashree",
+      "isbn_number": "978-93-92293-23-8",
+      "year": "2022",
+      "publication_date": "15/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 135,
+      "book_title": "PANMUGA NOOKKIL THAMIZHIYAL AAYVUGAL",
+      "author_editor": "Dr.K.JEGATHEESHWARI, A.BALAKRISHNAN, A.KARTHICK",
+      "isbn_number": "978-93-92293-92-4",
+      "year": "2022",
+      "publication_date": "10/02/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 136,
+      "book_title": "PANCHAM THANGI",
+      "author_editor": "NEELAN",
+      "isbn_number": "978-93-92293-22-1",
+      "year": "2022",
+      "publication_date": "26/01/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 137,
+      "book_title": "ANNAI MADI AKARAMADI",
+      "author_editor": "DR.P.LAKSHMI",
+      "isbn_number": "978-93-92293-20-7",
+      "year": "2022",
+      "publication_date": "08/01/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 138,
+      "book_title": "THAMIZH MANAM",
+      "author_editor": "DR.S.SAM GIDEON, DR. D.VINOTH ISAC PETER, DR.M.MUNEES MOORTHY, DR.S.KARTHIKEYAN, DR. D.YOGA, D.EDWIN CHARLES",
+      "isbn_number": "978-93-92293-21-4",
+      "year": "2022",
+      "publication_date": "08/01/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 139,
+      "book_title": "THAMIZH MANAM",
+      "author_editor": "DR.S.SAM GIDEON, DR. D.VINOTH ISAC PETER, DR.M.MUNEES MOORTHY, DR.S.KARTHIKEYAN, DR. D.YOGA, D.EDWIN CHARLES",
+      "isbn_number": "",
+      "year": "2022",
+      "publication_date": "08/01/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 140,
+      "book_title": "Secret life behind Paw",
+      "author_editor": "K.E.Balaji",
+      "isbn_number": "978-93-92293-15-3",
+      "year": "2021",
+      "publication_date": "15/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 141,
+      "book_title": "SELECTED NAMING REACTIONS IN ORGANIC CHEMISTRY",
+      "author_editor": "DR. S. K. KULANDAI THERESE",
+      "isbn_number": "978-93-92293-14-6",
+      "year": "2021",
+      "publication_date": "15/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 142,
+      "book_title": "SAHITYA CHINTAN KE VIVIDHA AAYAM",
+      "author_editor": "DR. P. RAJARETNAM",
+      "isbn_number": "978-93-92293-13-9",
+      "year": "2021",
+      "publication_date": "15/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 143,
+      "book_title": "PRINCIPLES OF MANAGEMENT",
+      "author_editor": "Dr.P.Ashok, Dr.M.Anandan",
+      "isbn_number": "978-93-92293-07-8",
+      "year": "2021",
+      "publication_date": "10/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 144,
+      "book_title": "KAVIVANIL SIRAKADIPPOM",
+      "author_editor": "R.EZHIL NILAVAN, K.GOKULA PRIYA, R.PREETHI, R. RAVIPRASATH",
+      "isbn_number": "978-93-92293-12-2",
+      "year": "2021",
+      "publication_date": "10/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 145,
+      "book_title": "THIRUMALAI SAMUTHIRAM SEMAKKARUPPU ANNAPUURANI THIRUKKOOYIL KALA AAYVU",
+      "author_editor": "D. BALASUBRAMANI",
+      "isbn_number": "978-93-92293-06-1",
+      "year": "2021",
+      "publication_date": "10/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 146,
+      "book_title": "ARAVAANARIN KIIZHKKANAKKU URAI SIRAPPIYALPUKAL",
+      "author_editor": "M. Munees Moorthy",
+      "isbn_number": "978-93-92293-05-4",
+      "year": "2021",
+      "publication_date": "10/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 147,
+      "book_title": "Miilparvaiyil K. P. Aravaananin patinen kiizhkkanakku uraikal",
+      "author_editor": "M. Munees Moorthy",
+      "isbn_number": "978-93-92293-05-4",
+      "year": "2021",
+      "publication_date": "23/12/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 148,
+      "book_title": "ILAKKANVIYAL ANUGUMURAIYIL TAMIL GRAMMARS",
+      "author_editor": "Dr. T. Sathiyaraj",
+      "isbn_number": "978-93-92293-04-7",
+      "year": "2021",
+      "publication_date": "17/10/2021",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 149,
+      "book_title": "Development Ethics for Thamizh Wikisource Project",
+      "author_editor": "Dr. R. Nithya",
+      "isbn_number": "978-93-95137-83-6",
+      "year": "2024",
+      "publication_date": "20/07/2024",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 150,
+      "book_title": "Development for Thamizh Wikisource Project",
+      "author_editor": "Dr. V. Karunya",
+      "isbn_number": "978-93-95137-41-6",
+      "year": "2024",
+      "publication_date": "27/03/2024",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 151,
+      "book_title": "Photography Concepts",
+      "author_editor": "S.Abinasha",
+      "isbn_number": "978-93-95137-60-7",
+      "year": "2024",
+      "publication_date": "20/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 152,
+      "book_title": "MAYA Shading and Texturing",
+      "author_editor": "S.Abinasha",
+      "isbn_number": "978-93-95137-59-1",
+      "year": "2024",
+      "publication_date": "19/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 153,
+      "book_title": "Modeling with Polygons",
+      "author_editor": "S.Abinasha",
+      "isbn_number": "978-93-95137-43-0",
+      "year": "2024",
+      "publication_date": "14/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 154,
+      "book_title": "Media Ethics",
+      "author_editor": "S.Abinasha",
+      "isbn_number": "978-93-95137-90-4",
+      "year": "2024",
+      "publication_date": "12/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 155,
+      "book_title": "Advanced Cloud Security",
+      "author_editor": "Dr. S. Hendry Leo Kanickam",
+      "isbn_number": "978-93-95137-49-2",
+      "year": "2024",
+      "publication_date": "20/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 156,
+      "book_title": "Software Engineering Techniques",
+      "author_editor": "Ms.M.KRISHNAVENI, KESEVARAJ C , DHARANI DHARAN S",
+      "isbn_number": "978-93-95137-33-1",
+      "year": "2023",
+      "publication_date": "24/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 157,
+      "book_title": "Digital Horizons : Navigating the landscape of Computer Technology",
+      "author_editor": "Ms.P.MALATHI, MOHAMMED ABITH S, GOKUL GUNA S",
+      "isbn_number": "978-93-95137-50-8",
+      "year": "2023",
+      "publication_date": "25/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 158,
+      "book_title": "Operating System For AI",
+      "author_editor": "Ms.M.KRISHNAVENI, KEERTHIVASAN N, SREEYESH S",
+      "isbn_number": "978-93-95137-61-4",
+      "year": "2023",
+      "publication_date": "27/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 159,
+      "book_title": "AIUX Design",
+      "author_editor": "Ms.M.KRISHNAVENI, NAVEEN R, ABISHEK P",
+      "isbn_number": "978-93-95137-91-1",
+      "year": "2023",
+      "publication_date": "25/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 160,
+      "book_title": "Game Development with C#",
+      "author_editor": "Ms.M.KRISHNAVENI, SURYANARAYANAN M, JEYAMURUGAN M",
+      "isbn_number": "978-93-95137-56-0",
+      "year": "2023",
+      "publication_date": "24/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 161,
+      "book_title": "AI and Society",
+      "author_editor": "Ms.P.MALATHI, AMIRTHALAKSHMI K P, HARINI N",
+      "isbn_number": "978-93-95137-86-7",
+      "year": "2023",
+      "publication_date": "19/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 162,
+      "book_title": "AI Analytics",
+      "author_editor": "Ms.P.MALATHI, DEVADHARSHINI . S, PRIYANKA .N",
+      "isbn_number": "978-93-95137-22-5",
+      "year": "2023",
+      "publication_date": "09/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 163,
+      "book_title": "OOPS",
+      "author_editor": "Ms.P.MALATHI, BALASUBRAMANIYAN . N, VILVA KARTHIKEYAN . K",
+      "isbn_number": "978-93-95137-87-4",
+      "year": "2023",
+      "publication_date": "08/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 164,
+      "book_title": "Quiz Game",
+      "author_editor": "Ms.P.MALATHI, STEEPENRAJ . X, JAGAN . V",
+      "isbn_number": "978-93-95137-57-7",
+      "year": "2023",
+      "publication_date": "07/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 165,
+      "book_title": "Programming in C",
+      "author_editor": "Ms.P.MALATHI, SINDHYA . C, HARINI SRI T.K",
+      "isbn_number": "978-93-95137-94-2",
+      "year": "2023",
+      "publication_date": "04/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 166,
+      "book_title": "METAVERSE VS AI",
+      "author_editor": "Ms.P.MALATHI, SABAREESHWARAN . M, MATHESH . S",
+      "isbn_number": "978-93-95137-32-4",
+      "year": "2023",
+      "publication_date": "20/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 167,
+      "book_title": "Data Analytics and Data Analysis",
+      "author_editor": "Ms.P.MALATHI, CAROLIN . A, KARTHIKA . S",
+      "isbn_number": "978-93-95137-26-3",
+      "year": "2023",
+      "publication_date": "19/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 168,
+      "book_title": "Al for beginners : Understanding the future of technology",
+      "author_editor": "Ms.P.MALATHI, KEERTHANA . N, MAHA SRI . S",
+      "isbn_number": "978-93-95137-52-2",
+      "year": "2023",
+      "publication_date": "18/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 169,
+      "book_title": "Text Analytics and NPL",
+      "author_editor": "Ms.P.MALATHI, BERACHAH PARIPOORANAM . J, LAVANYA . J",
+      "isbn_number": "978-93-95137-55-3",
+      "year": "2023",
+      "publication_date": "17/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 170,
+      "book_title": "Health Monitoring system in AI",
+      "author_editor": "Ms.P.MALATHI, PAVITHRA . V, NAVEENA . A",
+      "isbn_number": "978-93-95137-44-7",
+      "year": "2023",
+      "publication_date": "17/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 171,
+      "book_title": "Ethical And Illegal Computer Hacking",
+      "author_editor": "Ms.P.MALATHI, NATHISHA . J, SAKTHI . M",
+      "isbn_number": "978-93-95137-28-7",
+      "year": "2023",
+      "publication_date": "16/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 172,
+      "book_title": "Nothing but C++",
+      "author_editor": "Ms.P.MALATHI, GOKUL PRASAD . R, RAJEEV . M",
+      "isbn_number": "978-93-95137-88-1",
+      "year": "2023",
+      "publication_date": "08/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 173,
+      "book_title": "Success of Python",
+      "author_editor": "Mr.K.AMUTHAN, NIRMAL . S, GIRIDHAR . N",
+      "isbn_number": "978-93-95137-35-5",
+      "year": "2023",
+      "publication_date": "13/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 174,
+      "book_title": "Animated Program Design",
+      "author_editor": "Mr.K.AMUTHAN, HARIKRISHNA . M, NAVEEN KUMAR . J",
+      "isbn_number": "978-93-95137-62-1",
+      "year": "2023",
+      "publication_date": "10/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 175,
+      "book_title": "Multimedia Technology",
+      "author_editor": "Mr.K.AMUTHAN, SELVA KUMAR . M, RAGUL KUMARAN . M",
+      "isbn_number": "978-93-95137-47-8",
+      "year": "2023",
+      "publication_date": "11/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 176,
+      "book_title": "Programming Language Design and Implementation",
+      "author_editor": "Mr.K.AMUTHAN, RAMAN . P, KALISAMY . R",
+      "isbn_number": "978-93-95137-81-2",
+      "year": "2023",
+      "publication_date": "06/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 177,
+      "book_title": "Future Trends of IoT",
+      "author_editor": "Ms.P.MALATHI, MADHUBALA . M, PAVITHRA . K",
+      "isbn_number": "978-93-95137-96-6",
+      "year": "2023",
+      "publication_date": "06/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 178,
+      "book_title": "AI and Robotics",
+      "author_editor": "Mr.K.AMUTHAN, GANAPATHI . P, BALAJI . S",
+      "isbn_number": "978-93-95137-39-3",
+      "year": "2023",
+      "publication_date": "04/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 179,
+      "book_title": "Game Development",
+      "author_editor": "Ms.M.KRISHNAVENI, SABARIGIRISAN . S, AKHIL KRISHNAN . K",
+      "isbn_number": "978-93-95137-95-9",
+      "year": "2023",
+      "publication_date": "16/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 180,
+      "book_title": "Evolution of JAVA",
+      "author_editor": "Ms.M.KRISHNAVENI, ABIJITH . C, ARIVALAGAN . B",
+      "isbn_number": "978-93-95137-25-6",
+      "year": "2023",
+      "publication_date": "08/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 181,
+      "book_title": "AI & CHATBOT",
+      "author_editor": "Ms.P.MALATHI, KEERTHIKA . S, KEERTHIKA . T",
+      "isbn_number": "978-93-95137-48-5",
+      "year": "2023",
+      "publication_date": "04/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 182,
+      "book_title": "Decoding deFi: Navigating the World of Decentralized Finance on Blockchain",
+      "author_editor": "Ms.P.MALATHI, PUGALARASAN . C, MANOJ . S",
+      "isbn_number": "978-93-95137-27-0",
+      "year": "2023",
+      "publication_date": "14/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 183,
+      "book_title": "JAVASCRIPT",
+      "author_editor": "Ms.P.MALATHI, PRAVEEN KUMAR . G, SAKTHISWARAN . V",
+      "isbn_number": "978-93-95137-82-9",
+      "year": "2023",
+      "publication_date": "14/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 184,
+      "book_title": "The Decentralized Future: Navigating Blockchain's Revolutionary Path",
+      "author_editor": "Ms.P.MALATHI, RICHARD . A . T, SREEHARI. J.P",
+      "isbn_number": "978-93-95137-46-1",
+      "year": "2023",
+      "publication_date": "14/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 185,
+      "book_title": "Python Programming",
+      "author_editor": "Ms.P.MALATHI, VISWA .V, Ms.P.MALATHI, MAHESHWARAN. R",
+      "isbn_number": "978-93-95137-77-5",
+      "year": "2023",
+      "publication_date": "14/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 186,
+      "book_title": "KONGU VATTAARA KULATHEIVA VAZHIPADUM PEN THEIVANGALUM",
+      "author_editor": "UMAMAHESHWARI SELVARAJ",
+      "isbn_number": "978-93-95137-38-6",
+      "year": "2023",
+      "publication_date": "23/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 187,
+      "book_title": "Modern Business Management",
+      "author_editor": "S. Prakash, P. Anitha",
+      "isbn_number": "978-93-95137-93-5",
+      "year": "2023",
+      "publication_date": "13/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 188,
+      "book_title": "Soft computing : A beginners guide",
+      "author_editor": "Dr.Sujiya S Ms.S.Neethu",
+      "isbn_number": "978-93-95137-36-2",
+      "year": "2023",
+      "publication_date": "08/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 189,
+      "book_title": "Software engineering techniques and models",
+      "author_editor": "Mr.K.Amuthan Dr.A.Mythili",
+      "isbn_number": "978-93-95137-72-0",
+      "year": "2023",
+      "publication_date": "06/12/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 190,
+      "book_title": "Design Thinking based Recurrent Deep learning Applications for Predicting Cardiovascular Health care",
+      "author_editor": "Dr.D.KALAIVANI, Ms.R.SARANYA",
+      "isbn_number": "978-93-95137-34-8",
+      "year": "2023",
+      "publication_date": "20/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 191,
+      "book_title": "Big Data Analytics for Design Thinkers",
+      "author_editor": "Dr.D.KALAIVANI, Mr.N.Selvakumar",
+      "isbn_number": "978-93-95137-40-9",
+      "year": "2023",
+      "publication_date": "20/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 192,
+      "book_title": "Empowered Design Thinking Strategies",
+      "author_editor": "Dr.D.KALAIVANI, Ms.S.RAMYA",
+      "isbn_number": "978-93-95137-85-0",
+      "year": "2023",
+      "publication_date": "20/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 193,
+      "book_title": "Application of Multimedia Technologies - A Design Thinking Approach",
+      "author_editor": "Dr.D.KALAIVANI, Ms.C.Nithyaprabha",
+      "isbn_number": "978-93-95137-76-8",
+      "year": "2023",
+      "publication_date": "20/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 194,
+      "book_title": "HTML Programming for beginners",
+      "author_editor": "Dr.D.KALAIVANI, Mr.K. Dinesh",
+      "isbn_number": "978-93-95137-24-9",
+      "year": "2023",
+      "publication_date": "20/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 195,
+      "book_title": "App development in Thamizh using Java",
+      "author_editor": "Dr. A. Vinoth, Dr. Sathiyaraj Thangasamy, Poovandran G",
+      "isbn_number": "978-93-95137-84-3",
+      "year": "2023",
+      "publication_date": "10/02/2024",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 196,
+      "book_title": "FUNDAMENTALS OF DATA SCIENCE IN THAMIZH",
+      "author_editor": "A. Charles Mahimainathan, Dr.Sathiyaraj Thangasamy",
+      "isbn_number": "978-93-95137-79-9",
+      "year": "2023",
+      "publication_date": "10/02/2024",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 197,
+      "book_title": "RELATIONAL DATABASE MANAGEMENT SYSTEM",
+      "author_editor": "S.Saranya, Dr.P.Shivaranjani",
+      "isbn_number": "978-93-95137-53-9",
+      "year": "2023",
+      "publication_date": "01/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 198,
+      "book_title": "PHP HAND BOOK",
+      "author_editor": "Dr.P.Shivaranjani, S.Saranya",
+      "isbn_number": "978-93-95137-66-9",
+      "year": "2023",
+      "publication_date": "01/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 199,
+      "book_title": "ADVANCED COMPUTER PERIPHERAL NETWORK",
+      "author_editor": "M.KRISHNAVENI",
+      "isbn_number": "978-93-95137-37-9",
+      "year": "2023",
+      "publication_date": "01/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 200,
+      "book_title": "CLOUD TECHNOLOGY FUNDAMENTALS",
+      "author_editor": "P.MATHIAZHAGAN, C.RAJKUMAR",
+      "isbn_number": "978-93-95137-67-6",
+      "year": "2023",
+      "publication_date": "11/09/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 201,
+      "book_title": "MANAGING API",
+      "author_editor": "C.RAJKUMAR, Dr.S.SUJIYA",
+      "isbn_number": "978-93-95137-51-5",
+      "year": "2023",
+      "publication_date": "11/09/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 202,
+      "book_title": "ENTREPRENEURIAL DEVELOPMENT",
+      "author_editor": "Dr.A.MYILSAMY",
+      "isbn_number": "978-93-95137-15-7",
+      "year": "2023",
+      "publication_date": "31/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 203,
+      "book_title": "PYTHON PROGRAMMING :S BEGINNER’S GUIDE",
+      "author_editor": "Dr.D.KALAIVANI, D.PRINCY",
+      "isbn_number": "978-93-95137-14-0",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 204,
+      "book_title": "PHP WITH MY SQL",
+      "author_editor": "Dr.D.KALAIVANI, K.DINESH",
+      "isbn_number": "978-93-95137-13-3",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 205,
+      "book_title": "HUMAN COMPUTER INTERACTION",
+      "author_editor": "P.MALATHI, Dr.D.KALAIVANI, K.KANNAN",
+      "isbn_number": "978-93-95137-12-6",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 206,
+      "book_title": "LEARN OBJECT ORIENTED PROGRAMMING WITH C++ AND JAVA",
+      "author_editor": "K.KANNAN, P.MALATHI, Dr.D.KALAIVANI",
+      "isbn_number": "978-93-95137-11-9",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 207,
+      "book_title": "MACHINE LEARNING AND ITS APPLICATIONS",
+      "author_editor": "Dr.D.KALAIVANI, R.SARANYA",
+      "isbn_number": "978-93-95137-10-2",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 208,
+      "book_title": "TECHGEEKS",
+      "author_editor": "Dr.D.KALAIVANI, G.DHINESHKUMAR, V.HARIDHILESH",
+      "isbn_number": "978-93-95137-09-6",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 209,
+      "book_title": "DATA SCIENCE AND CLOUD COMPUTING",
+      "author_editor": "Dr.D.KALAIVANI, S.RAMYA",
+      "isbn_number": "978-93-95137-08-9",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 210,
+      "book_title": "PYTHON PROGRAMMING QUICK REFERENCE",
+      "author_editor": "Dr.D.KALAIVANI, N.SELVAKUMAR",
+      "isbn_number": "978-93-95137-07-2",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 211,
+      "book_title": "ARTIFICIAL INTELLIGENCE IN AND ITS TECHNIQUES",
+      "author_editor": "Dr.D.KALAIVANI, C.NITHYA PRABHA",
+      "isbn_number": "978-93-95137-06-5",
+      "year": "2023",
+      "publication_date": "20/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 212,
+      "book_title": "Introduction to Internet of Things",
+      "author_editor": "Monisha S M, Lalitha S",
+      "isbn_number": "978-93-95137-05-8",
+      "year": "2023",
+      "publication_date": "12/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 213,
+      "book_title": "Virtualization Technology Fundamentals",
+      "author_editor": "Lalitha S, Monisha S M",
+      "isbn_number": "978-93-95137-04-1",
+      "year": "2023",
+      "publication_date": "12/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 214,
+      "book_title": "Computer Networks and Data Communications",
+      "author_editor": "Rajkumar C, Mathiazhagan P",
+      "isbn_number": "978-93-95137-03-4",
+      "year": "2023",
+      "publication_date": "12/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 215,
+      "book_title": "THAMIZHARIN MARUTHUVA AALUMAI",
+      "author_editor": "DR.R.SHARMILA",
+      "isbn_number": "978-93-95137-02-7",
+      "year": "2023",
+      "publication_date": "01/07/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 216,
+      "book_title": "Python usage in Wikimedia projects",
+      "author_editor": "Dr.T.Sathiyaraj, Dr.R. Nithya, R.Loganathan (Thagavaluzhavan)",
+      "isbn_number": "978-93-95137-01-0",
+      "year": "2023",
+      "publication_date": "17/10/2023",
+      "publishing_name": "INAM PATHIPPAGAM"
+    },
+    {
+      "sr_no": 217,
+      "book_title": "Phonological Grammatical Theory (Tamil and Telugu)",
+      "author_editor": "Dr. Ch. Savithri",
+      "isbn_number": "978-93-95137-00-3",
+      "year": "2023",
+      "publication_date": "17/03/2022",
+      "publishing_name": "INAM PATHIPPAGAM"
+    }
+  ]
+}
