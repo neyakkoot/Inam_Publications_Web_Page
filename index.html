@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png">
 </head>
 <body>
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header Section with Logo -->
         <header>
             <div class="header-content">
-                <h1><i class="fas fa-book"></i> INAM PATHIPPAGAM</h1>
-                <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+                <div class="logo-title-container">
+                    <div class="logo-container">
+                        <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
+                             alt="INAM PATHIPPAGAM Logo" 
+                             class="logo"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjMWU1Nzk5Ii8+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPklOQU08L3RleHQ+Cjwvc3ZnPgo=';">
+                    </div>
+                    <div class="title-container">
+                        <h1><i class="fas fa-book"></i> INAM PATHIPPAGAM</h1>
+                        <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+                    </div>
+                </div>
+                
                 <div class="stats">
                     <div class="stat">
                         <i class="fas fa-book-open"></i>
@@ -23,7 +35,7 @@
                     </div>
                     <div class="stat">
                         <i class="fas fa-calendar-alt"></i>
-                        <span>2018 - 2024</span>
+                        <span>2018 - 20266</span>
                         <p>வெளியீட்டு ஆண்டுகள்</p>
                     </div>
                     <div class="stat">
@@ -47,32 +59,11 @@
             <div class="search-box">
                 <i class="fas fa-search"></i>
                 <input type="text" id="search" placeholder="புத்தகம், ஆசிரியர் அல்லது ISBN எண் மூலம் தேடுக...">
-   <!-- Add this inside the table container section, before the table -->
-<div class="table-container">
-    <div class="loading-indicator" id="loading-indicator">
-        <i class="fas fa-spinner"></i>
-        <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
-    </div>
-    
-    <table id="books-table">
-        <!-- ... existing table code ... -->
-    </table>
-    
-    <div class="no-results" id="no-results">
-        <!-- ... existing no results code ... -->
-    </div>
-</div>
             </div>
             <div class="filter-controls">
                 <select id="year-filter">
                     <option value="all">அனைத்து ஆண்டுகள்</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
+                    <!-- Years will be populated dynamically -->
                 </select>
                 <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
             </div>
@@ -80,6 +71,11 @@
 
         <!-- Books Table -->
         <div class="table-container">
+            <div class="loading-indicator" id="loading-indicator">
+                <i class="fas fa-spinner"></i>
+                <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
+            </div>
+            
             <table id="books-table">
                 <thead>
                     <tr>
@@ -101,10 +97,26 @@
             </div>
         </div>
 
-        <!-- Footer -->
+        <!-- Footer with Logo -->
         <footer>
-            <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
-            <p class="footer-info">இந்த பட்டியல் சரியான தகவல்களைக் கொண்டுள்ளதா என்பதை உறுதிப்படுத்த புத்தகங்களின் அசல் ஆவணங்களைச் சரிபார்க்கவும்.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" 
+                         alt="INAM PATHIPPAGAM Logo"
+                         class="footer-logo-img"
+                         onerror="this.onerror=null; this.style.display='none'">
+                </div>
+                <div class="footer-text">
+                    <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+                    <p class="footer-info">இந்த பட்டியல் சரியான தகவல்களைக் கொண்டுள்ளதா என்பதை உறுதிப்படுத்த புத்தகங்களின் அசல் ஆவணங்களைச் சரிபார்க்கவும்.</p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> இணையத்தளம்: 
+                        <a href="https://github.com/neyakkoot/Inam_Publications_Web_Page" target="_blank" rel="noopener noreferrer">
+                            GitHub Repository
+                        </a>
+                    </p>
+                </div>
+            </div>
         </footer>
     </div>
 
