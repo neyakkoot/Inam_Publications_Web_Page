@@ -1,3 +1,54 @@
+// Add these functions to your script.js
+
+// Function to show loading indicator
+function showLoading() {
+    document.getElementById('loading-indicator').style.display = 'block';
+    document.getElementById('books-table').style.display = 'none';
+    document.getElementById('no-results').style.display = 'none';
+}
+
+// Function to hide loading indicator
+function hideLoading() {
+    document.getElementById('loading-indicator').style.display = 'none';
+    document.getElementById('books-table').style.display = 'table';
+}
+
+// Update the loadBooksFromGitHub function to include loading indicator
+async function loadBooksFromGitHub() {
+    try {
+        showLoading();
+        
+        const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        if (data && data.books && Array.isArray(data.books)) {
+            allBooks = data.books;
+            
+            // Set total books count
+            totalBooksSpan.textContent = allBooks.length;
+            
+            // Hide loading and display books
+            hideLoading();
+            displayBooks(allBooks);
+            
+            // Populate year filter with unique years
+            populateYearFilter(allBooks);
+            
+            console.log(`Loaded ${allBooks.length} books successfully`);
+        } else {
+            throw new Error('Invalid JSON structure');
+        }
+    } catch (error) {
+        console.error('Error loading books from GitHub:', error);
+        hideLoading();
+        displayError();
+    }
+}
 // DOM Elements
 const booksTbody = document.getElementById('books-tbody');
 const searchInput = document.getElementById('search');
