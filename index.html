@@ -3,85 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INAM PATHIPPAGAM - புத்தகங்களின் பட்டியல்</title>
+    <title>இனம் பதிப்பகம் - புத்தகப் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-content">
-                <h1><i class="fas fa-book"></i> INAM PATHIPPAGAM</h1>
-                <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
-                <div class="stats">
-                    <div class="stat">
-                        <i class="fas fa-book-open"></i>
-                        <span id="total-books">0</span>
-                        <p>மொத்த புத்தகங்கள்</p>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span>2018 - 2026</span>
-                        <p>வெளியீட்டு ஆண்டுகள்</p>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-user-edit"></i>
-                        <span>200+</span>
-                        <p>நூலாசிரியர்கள்</p>
-                    </div>
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>INAM PATHIPPAGAM</h1>
+            </div>
+            <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span id="total-count">0</span>
+                    <p>மொத்த நூல்கள்</p>
                 </div>
             </div>
         </header>
 
-        <div class="disclaimer">
-            <h3><i class="fas fa-exclamation-triangle"></i> பொறுப்புத் துறப்பு</h3>
-            <p>இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
-            <p class="english">The authors are solely responsible for the opinions expressed in their works. Inam Publishing is not responsible in any way.</p>
-        </div>
-
         <div class="controls">
             <div class="search-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="search" placeholder="புத்தகம், ஆசிரியர் அல்லது ISBN மூலம் தேடுக...">
+                <input type="text" id="searchInput" placeholder="நூல் பெயர் அல்லது ஆசிரியர் பெயர் மூலம் தேடுக...">
             </div>
-            <div class="filter-controls">
-                <select id="year-filter">
+            <div class="filter-box">
+                <select id="yearFilter">
                     <option value="all">அனைத்து ஆண்டுகள்</option>
                 </select>
-                <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
             </div>
         </div>
 
         <div class="table-container">
-            <div class="loading-indicator" id="loading-indicator">
-                <i class="fas fa-spinner"></i>
-                <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
-            </div>
-            
-            <table id="books-table" style="display: none;">
+            <table id="booksTable">
                 <thead>
                     <tr>
                         <th>வ.எண்</th>
-                        <th>புத்தகத்தின் பெயர்</th>
-                        <th>ஆசிரியர்</th>
-                        <th>ISBN எண்</th>
+                        <th>நூல் தலைப்பு</th>
+                        <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
+                        <th>ISBN</th>
                         <th>ஆண்டு</th>
-                        <th>வெளியீட்டு தேதி</th>
                     </tr>
                 </thead>
-                <tbody id="books-tbody">
+                <tbody id="tableBody">
                     </tbody>
             </table>
-
-            <div class="no-results" id="no-results" style="display: none;">
-                <i class="fas fa-search"></i>
-                <p>தேடலுக்கு பொருந்தக்கூடிய புத்தகங்கள் எதுவும் கிடைக்கவில்லை.</p>
+            <div id="noResults" class="hidden">
+                <i class="fas fa-frown"></i>
+                <p>தேடலுக்குரிய முடிவுகள் ஏதும் இல்லை!</p>
             </div>
         </div>
 
+        <div class="disclaimer-box">
+            <h3><i class="fas fa-info-circle"></i> பொறுப்புத் துறப்பு</h3>
+            <p id="disclaimer-text"></p>
+        </div>
+
         <footer>
-            <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+            <p>© 2026 இனம் பதிப்பகம் | அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
         </footer>
     </div>
 
