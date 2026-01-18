@@ -6,13 +6,13 @@
     <title>Inam Pathippagam - நூல்களின் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="main-header">
+        <header class="animate-fade-in">
             <div class="header-content">
-                <div class="logo-wrapper">
+                <div class="logo-wrapper pulse">
                     <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" alt="Inam Logo" class="brand-logo">
                 </div>
                 <div class="brand-text">
@@ -21,32 +21,35 @@
                 </div>
             </div>
             
-            <div class="info-card">
-                <p class="tam-note">இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
-                <p class="eng-note">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
+            <div class="disclaimer-box slide-up">
+                <p>இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
+                <p class="eng-text">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
                 <a href="https://archive.org/details/@inam_pathippagam" target="_blank" class="archive-btn">
                     <i class="fas fa-archive"></i> Wrappers Visit Internet Archives
                 </a>
             </div>
         </header>
 
-        <div class="control-area">
+        <div class="controls-grid slide-up">
             <div class="search-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="நூல், ஆசிரியர் அல்லது ISBN மூலம் தேடுக...">
+                <input type="text" id="searchInput" placeholder="நூல், ஆசிரியர் மூலம் தேடுக...">
             </div>
-            <select id="yearFilter">
-                <option value="all">அனைத்து ஆண்டுகள்</option>
-            </select>
+            <div class="filter-box">
+                <select id="yearFilter">
+                    <option value="all">அனைத்து ஆண்டுகள்</option>
+                </select>
+                <button id="resetBtn" title="மீட்டமை"><i class="fas fa-sync-alt"></i></button>
+            </div>
         </div>
 
-        <div class="table-card">
-            <div id="loading" class="loading-state">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>நூல்களைத் தேடுகிறது...</p>
+        <main class="table-container slide-up">
+            <div id="loader" class="loader">
+                <div class="spinner"></div>
+                <p>நூல்களைத் திரட்டுகிறது...</p>
             </div>
             <div class="table-responsive">
-                <table id="booksTable" style="display: none;">
+                <table id="booksTable" class="hidden">
                     <thead>
                         <tr>
                             <th>வ.எண்</th>
@@ -59,10 +62,7 @@
                     <tbody id="tableBody"></tbody>
                 </table>
             </div>
-            <div id="no-data" style="display: none; text-align: center; padding: 20px;">
-                <p>தகவல்கள் ஏதுமில்லை.</p>
-            </div>
-        </div>
+        </main>
 
         <footer>
             <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
