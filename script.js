@@ -1,78 +1,3 @@
-
-// Alternative method using a CORS proxy if needed
-async function loadBooksFromGitHub() {
-    try {
-        showLoading();
-        
-        // Using CORS proxy to avoid CORS issues
-        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-        const targetUrl = 'https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json';
-        
-        const response = await fetch(proxyUrl + targetUrl, {
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-            }
-        });
-        
-        // Rest of the code remains the same...
-        // ... (same as previous loadBooksFromGitHub function)
-    } catch (error) {
-        console.error('Error loading books:', error);
-        hideLoading();
-        displayError();
-    }
-}
-// Add these functions to your script.js
-
-// Function to show loading indicator
-function showLoading() {
-    document.getElementById('loading-indicator').style.display = 'block';
-    document.getElementById('books-table').style.display = 'none';
-    document.getElementById('no-results').style.display = 'none';
-}
-
-// Function to hide loading indicator
-function hideLoading() {
-    document.getElementById('loading-indicator').style.display = 'none';
-    document.getElementById('books-table').style.display = 'table';
-}
-
-// Update the loadBooksFromGitHub function to include loading indicator
-async function loadBooksFromGitHub() {
-    try {
-        showLoading();
-        
-        const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json');
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        
-        if (data && data.books && Array.isArray(data.books)) {
-            allBooks = data.books;
-            
-            // Set total books count
-            totalBooksSpan.textContent = allBooks.length;
-            
-            // Hide loading and display books
-            hideLoading();
-            displayBooks(allBooks);
-            
-            // Populate year filter with unique years
-            populateYearFilter(allBooks);
-            
-            console.log(`Loaded ${allBooks.length} books successfully`);
-        } else {
-            throw new Error('Invalid JSON structure');
-        }
-    } catch (error) {
-        console.error('Error loading books from GitHub:', error);
-        hideLoading();
-        displayError();
-    }
-}
 // DOM Elements
 const booksTbody = document.getElementById('books-tbody');
 const searchInput = document.getElementById('search');
@@ -80,171 +5,105 @@ const yearFilter = document.getElementById('year-filter');
 const resetFiltersBtn = document.getElementById('reset-filters');
 const noResultsDiv = document.getElementById('no-results');
 const totalBooksSpan = document.getElementById('total-books');
+const loadingIndicator = document.getElementById('loading-indicator');
+const booksTable = document.getElementById('books-table');
 
 let allBooks = [];
 
-// Initialize the page
-document.addEventListener('DOMContentLoaded', function() {
-    // Load books from GitHub JSON
-    loadBooksFromGitHub();
-    
-    // Setup event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    loadBooks();
     searchInput.addEventListener('input', filterBooks);
     yearFilter.addEventListener('change', filterBooks);
     resetFiltersBtn.addEventListener('click', resetFilters);
 });
 
-// Function to load books from GitHub JSON
-async function loadBooksFromGitHub() {
+async function loadBooks() {
+    showLoading(true);
     try {
+        // நேரடி GitHub URL. CORS பிரச்சனை இருந்தால் proxy பயன்படுத்தலாம்.
         const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json');
         
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error('Network response was not ok');
         
         const data = await response.json();
+        allBooks = data.books || [];
         
-        if (data && data.books && Array.isArray(data.books)) {
-            allBooks = data.books;
-            
-            // Set total books count
-            totalBooksSpan.textContent = allBooks.length;
-            
-            // Display all books initially
-            displayBooks(allBooks);
-            
-            // Populate year filter with unique years
-            populateYearFilter(allBooks);
-            
-            console.log(`Loaded ${allBooks.length} books successfully`);
-        } else {
-            throw new Error('Invalid JSON structure');
-        }
+        totalBooksSpan.textContent = allBooks.length;
+        populateYearFilter(allBooks);
+        displayBooks(allBooks);
+        showLoading(false);
     } catch (error) {
-        console.error('Error loading books from GitHub:', error);
+        console.error('Error:', error);
+        showLoading(false);
         displayError();
     }
 }
 
-// Function to populate year filter with unique years
+function showLoading(isLoading) {
+    loadingIndicator.style.display = isLoading ? 'block' : 'none';
+    booksTable.style.display = isLoading ? 'none' : 'table';
+}
+
 function populateYearFilter(books) {
-    const yearSelect = document.getElementById('year-filter');
-    
-    // Get unique years from books
-    const years = [...new Set(books.map(book => book.year).filter(year => year))];
-    
-    // Sort years in descending order
-    years.sort((a, b) => b - a);
-    
-    // Clear existing options except the first one
-    while (yearSelect.options.length > 1) {
-        yearSelect.remove(1);
-    }
-    
-    // Add year options
+    const years = [...new Set(books.map(b => b.year).filter(y => y))].sort((a, b) => b - a);
     years.forEach(year => {
-        const option = document.createElement('option');
-        option.value = year;
-        option.textContent = year;
-        yearSelect.appendChild(option);
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        yearFilter.appendChild(opt);
     });
 }
 
-// Function to display books in the table
 function displayBooks(books) {
     booksTbody.innerHTML = '';
     
     if (books.length === 0) {
         noResultsDiv.style.display = 'block';
+        booksTable.style.display = 'none';
         return;
     }
-    
+
     noResultsDiv.style.display = 'none';
-    
+    booksTable.style.display = 'table';
+
     books.forEach(book => {
         const row = document.createElement('tr');
-        
-        // Format publication date
-        let pubDate = book.publication_date || '';
-        if (pubDate === "01/01/1900" || pubDate === "") {
-            pubDate = "-";
-        } else if (pubDate) {
-            // Format date to display properly
-            pubDate = formatDate(pubDate);
-        }
-        
-        // Format ISBN - show empty string if not available
-        const isbn = book.isbn_number || "-";
+        const pubDate = (book.publication_date === "01/01/1900" || !book.publication_date) ? "-" : book.publication_date;
         
         row.innerHTML = `
-            <td>${book.sr_no || "-"}</td>
-            <td>${book.book_title || "-"}</td>
-            <td>${book.author_editor || "-"}</td>
-            <td>${isbn}</td>
-            <td>${book.year || "-"}</td>
-            <td>${pubDate}</td>
+            <td data-label="வ.எண்">${book.sr_no}</td>
+            <td data-label="புத்தகம்">${book.book_title}</td>
+            <td data-label="ஆசிரியர்">${book.author_editor}</td>
+            <td data-label="ISBN">${book.isbn_number || "-"}</td>
+            <td data-label="ஆண்டு">${book.year}</td>
+            <td data-label="தேதி">${pubDate}</td>
         `;
-        
         booksTbody.appendChild(row);
     });
 }
 
-// Function to format date from DD/MM/YYYY to a more readable format
-function formatDate(dateString) {
-    if (!dateString || dateString === "01/01/1900") return "-";
-    
-    // Check if date is in DD/MM/YYYY format
-    if (dateString.includes('/')) {
-        const parts = dateString.split('/');
-        if (parts.length === 3) {
-            // Return in DD/MM/YYYY format
-            return `${parts[0]}/${parts[1]}/${parts[2]}`;
-        }
-    }
-    
-    return dateString;
-}
-
-// Function to filter books based on search and year
 function filterBooks() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const selectedYear = yearFilter.value;
-    
-    const filteredBooks = allBooks.filter(book => {
-        // Check if book matches search term
-        const matchesSearch = searchTerm === '' || 
-            (book.book_title && book.book_title.toLowerCase().includes(searchTerm)) ||
-            (book.author_editor && book.author_editor.toLowerCase().includes(searchTerm)) ||
-            (book.isbn_number && book.isbn_number.toLowerCase().includes(searchTerm));
+    const search = searchInput.value.toLowerCase();
+    const year = yearFilter.value;
+
+    const filtered = allBooks.filter(book => {
+        const matchesSearch = !search || 
+            book.book_title.toLowerCase().includes(search) || 
+            book.author_editor.toLowerCase().includes(search) || 
+            (book.isbn_number && book.isbn_number.includes(search));
         
-        // Check if book matches selected year
-        const matchesYear = selectedYear === 'all' || book.year === selectedYear;
-        
+        const matchesYear = year === 'all' || book.year === year;
         return matchesSearch && matchesYear;
     });
-    
-    displayBooks(filteredBooks);
+    displayBooks(filtered);
 }
 
-// Function to reset all filters
 function resetFilters() {
     searchInput.value = '';
     yearFilter.value = 'all';
     displayBooks(allBooks);
 }
 
-// Function to display error message
 function displayError() {
-    booksTbody.innerHTML = `
-        <tr>
-            <td colspan="6" style="text-align: center; padding: 40px; color: #dc3545;">
-                <i class="fas fa-exclamation-circle" style="font-size: 3rem; margin-bottom: 15px;"></i>
-                <h3>தரவுகளை ஏற்ற முடியவில்லை</h3>
-                <p>புத்தக பட்டியலை GitHub இலிருந்து ஏற்றுவதில் பிரச்சனை ஏற்பட்டுள்ளது.</p>
-                <p>தயவு செய்து பின்னர் முயற்சிக்கவும்.</p>
-            </td>
-        </tr>
-    `;
-    noResultsDiv.style.display = 'none';
+    booksTbody.innerHTML = `<tr><td colspan="6" class="error-state">தரவுகளைப் பெறுவதில் பிழை!</td></tr>`;
 }
