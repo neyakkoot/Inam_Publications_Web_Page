@@ -1,99 +1,99 @@
 :root {
-    --primary: #0d47a1;
-    --accent: #ffb300;
-    --text: #2c3e50;
-    --bg: #f0f4f8;
+    --primary: #1a237e;
+    --accent: #c62828;
+    --glass: rgba(255, 255, 255, 0.9);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
 body {
-    font-family: 'Poppins', 'Noto Sans Tamil', sans-serif;
-    background-color: var(--bg);
     margin: 0;
-    color: var(--text);
+    font-family: 'Poppins', 'Noto Sans Tamil', sans-serif;
+    background: #eef2f7;
+    color: #2c3e50;
+    overflow-x: hidden;
 }
 
-.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-
-/* முத்திரை மற்றும் தலைப்பு அமைப்பு */
-header {
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    margin-bottom: 25px;
+.glass-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 300px;
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    z-index: -1;
+    border-radius: 0 0 50% 50% / 20px;
 }
 
-.brand-section { display: flex; align-items: center; gap: 20px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 
-.logo-container {
-    width: 90px;
-    height: 90px;
-    background: white;
+/* Logo & Header */
+.header-top { display: flex; align-items: center; gap: 20px; padding: 20px 0; color: white; }
+
+.logo-wrapper {
+    width: 90px; height: 90px;
     border-radius: 50%;
-    padding: 3px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border: 3px solid var(--primary);
+    border: 3px solid rgba(255,255,255,0.8);
+    background: white;
+    padding: 2px;
+    box-shadow: var(--shadow);
 }
 
-.circular-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-}
+.brand-logo { width: 100%; height: 100%; border-radius: 50%; object-fit: contain; }
 
-.title-container h1 { color: var(--primary); margin: 0; font-size: 1.8rem; }
-.subtitle { margin: 5px 0 0; color: #7f8c8d; font-size: 0.95rem; }
+.brand-info h1 { margin: 0; font-size: 2rem; letter-spacing: 1px; }
 
-/* தேடல் மற்றும் வடிகட்டி */
-.search-filter-area {
-    display: flex;
-    gap: 15px;
+.disclaimer-card {
+    background: var(--glass);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    border-left: 6px solid var(--accent);
 }
 
-.search-input-wrapper {
-    flex: 1;
-    position: relative;
-    min-width: 280px;
+.archive-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
-.search-input-wrapper i { position: absolute; left: 15px; top: 15px; color: #95a5a6; }
-.search-input-wrapper input {
-    width: 100%;
-    padding: 12px 12px 12px 45px;
-    border: 2px solid white;
-    border-radius: 10px;
-    font-size: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+.archive-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(198,40,40,0.4); }
+
+/* Stats & Controls */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px; }
+
+.stat-card { background: var(--glass); padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow); }
+
+.stat-val { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+
+.control-panel { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+
+.search-container { flex: 1; position: relative; min-width: 280px; }
+
+.search-container input {
+    width: 100%; padding: 14px 14px 14px 45px;
+    border: none; border-radius: 10px; box-shadow: var(--shadow); outline: none;
 }
 
-/* லோடிங் ஸ்பின்னர் */
-.loader-wrapper { text-align: center; padding: 50px; }
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #ddd;
-    border-top: 4px solid var(--primary);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 15px;
-}
-@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.search-container i { position: absolute; left: 15px; top: 18px; color: #7f8c8d; }
 
-/* அட்டவணை */
-.table-responsive { background: white; border-radius: 12px; overflow: hidden; }
+/* Table Styling */
+.content-card { background: var(--glass); border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); }
+
 table { width: 100%; border-collapse: collapse; }
-th { background: #f8f9fa; padding: 15px; text-align: left; color: var(--primary); border-bottom: 2px solid #edf2f7; }
-td { padding: 15px; border-bottom: 1px solid #edf2f7; }
-tr:hover { background: #f1f7ff; }
+
+th { background: #f8f9fa; padding: 18px; text-align: left; color: var(--primary); font-weight: 600; border-bottom: 2px solid #eee; }
+
+td { padding: 16px; border-bottom: 1px solid #f1f1f1; font-size: 0.95rem; }
+
+tr:hover { background: rgba(57, 73, 171, 0.05); }
 
 .hidden { display: none; }
+
+@media (max-width: 768px) {
+    .header-top { flex-direction: column; text-align: center; }
+    th:nth-child(4), td:nth-child(4) { display: none; } /* மொபைலில் ISBN மறைத்தல் */
+}
