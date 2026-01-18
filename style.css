@@ -1,6 +1,5 @@
-/* Add these styles to your existing style.css file */
+/* ஏற்கனவே உள்ள ஸ்டைல்களுடன் இதையும் சேர்க்கவும் */
 
-/* Loading indicator */
 .loading-indicator {
     text-align: center;
     padding: 50px;
@@ -9,97 +8,42 @@
 
 .loading-indicator i {
     font-size: 3rem;
-    margin-bottom: 15px;
     animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-/* Error state */
 .error-state {
-    text-align: center;
-    padding: 50px;
     color: #dc3545;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
 }
 
-.error-state i {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-/* Highlight search results */
-.highlight {
-    background-color: #fff9c4;
-    padding: 2px 4px;
-    border-radius: 3px;
-}
-
-/* Improve table responsiveness */
+/* Responsive Table */
 @media (max-width: 768px) {
-    #books-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    
-    #books-table thead {
-        display: none;
-    }
-    
-    #books-table tbody, #books-table tr, #books-table td {
+    #books-table thead { display: none; }
+    #books-table, #books-table tbody, #books-table tr, #books-table td {
         display: block;
         width: 100%;
     }
-    
-    #books-table tr {
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 10px;
-        position: relative;
-    }
-    
+    #books-table tr { margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; }
     #books-table td {
-        padding: 8px 10px;
-        text-align: left;
-        border-bottom: 1px solid #eee;
-        position: relative;
+        text-align: right;
         padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #eee;
     }
-    
-    #books-table td:before {
+    #books-table td::before {
         content: attr(data-label);
         position: absolute;
         left: 10px;
         width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
+        text-align: left;
         font-weight: bold;
         color: #1e5799;
-    }
-    
-    #books-table td:last-child {
-        border-bottom: none;
-    }
-}
-
-/* Make the table more responsive for mobile */
-.mobile-label {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .mobile-label {
-        display: inline-block;
-        font-weight: bold;
-        min-width: 120px;
-        color: #1e5799;
-    }
-    
-    .table-container {
-        padding: 0 10px;
     }
 }
