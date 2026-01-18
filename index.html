@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>இனம் பதிப்பகம் - புத்தகப் பட்டியல்</title>
+    <title>INAM PATHIPPAGAM - புத்தகப் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <i class="fas fa-book-open"></i>
-                <h1>INAM PATHIPPAGAM</h1>
+            <div class="header-container">
+                <div class="logo-wrapper">
+                    <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" alt="Inam Logo" class="brand-logo">
+                </div>
+                <div class="header-text">
+                    <h1>INAM PATHIPPAGAM</h1>
+                    <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+                </div>
             </div>
-            <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
             
-            <div class="stats-bar">
-                <div class="stat-item">
-                    <span id="total-count">0</span>
-                    <p>மொத்த நூல்கள்</p>
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-book-open"></i>
+                    <span id="total-books">0</span>
+                    <p>மொத்த புத்தகங்கள்</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>2018 - 2026</span>
+                    <p>வெளியீட்டு ஆண்டுகள்</p>
                 </div>
             </div>
         </header>
@@ -28,45 +38,42 @@
         <div class="controls">
             <div class="search-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="நூல் பெயர் அல்லது ஆசிரியர் பெயர் மூலம் தேடுக...">
+                <input type="text" id="search" placeholder="புத்தகம் அல்லது ஆசிரியர் பெயர் மூலம் தேடுக...">
             </div>
-            <div class="filter-box">
-                <select id="yearFilter">
+            <div class="filter-controls">
+                <select id="year-filter">
                     <option value="all">அனைத்து ஆண்டுகள்</option>
                 </select>
+                <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
             </div>
         </div>
 
         <div class="table-container">
-            <table id="booksTable">
+            <div id="loading-indicator" class="loading-indicator">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>தரவுகள் ஏற்றப்படுகின்றன...</p>
+            </div>
+            <table id="books-table" style="display:none;">
                 <thead>
                     <tr>
                         <th>வ.எண்</th>
-                        <th>நூல் தலைப்பு</th>
+                        <th>புத்தகத்தின் பெயர்</th>
                         <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
-                        <th>ISBN</th>
+                        <th>ISBN எண்</th>
                         <th>ஆண்டு</th>
                     </tr>
                 </thead>
-                <tbody id="tableBody">
-                    </tbody>
+                <tbody id="books-tbody"></tbody>
             </table>
-            <div id="noResults" class="hidden">
-                <i class="fas fa-frown"></i>
-                <p>தேடலுக்குரிய முடிவுகள் ஏதும் இல்லை!</p>
+            <div id="no-results" class="no-results" style="display:none;">
+                <p>முடிவுகள் எதுவும் கிடைக்கவில்லை!</p>
             </div>
         </div>
 
-        <div class="disclaimer-box">
-            <h3><i class="fas fa-info-circle"></i> பொறுப்புத் துறப்பு</h3>
-            <p id="disclaimer-text"></p>
-        </div>
-
         <footer>
-            <p>© 2026 இனம் பதிப்பகம் | அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+            <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
         </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
