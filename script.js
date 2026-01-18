@@ -1,109 +1,96 @@
-// DOM Elements
-const booksTbody = document.getElementById('books-tbody');
-const searchInput = document.getElementById('search');
-const yearFilter = document.getElementById('year-filter');
-const resetFiltersBtn = document.getElementById('reset-filters');
-const noResultsDiv = document.getElementById('no-results');
-const totalBooksSpan = document.getElementById('total-books');
-const loadingIndicator = document.getElementById('loading-indicator');
-const booksTable = document.getElementById('books-table');
+// தரவுகளை இங்கே நேரடியாக வழங்கலாம் அல்லது fetch மூலம் பெறலாம்
+// ஒருவேளை உங்கள் கோப்பு list.json என்ற பெயரில் அதே போல்டரில் இருந்தால்
+// fetch('list.json').then(...) பயன்படுத்தவும்.
+// இங்கே எளிமைக்காக தரவுகளை வேரியபிளில் வைக்கிறேன்.
 
-let allBooks = [];
+const jsonData = {
+    // ... நீங்கள் வழங்கிய முழு json தரவுகளும் இங்கே இருப்பதாகக் கொள்க ...
+    // (கீழே உள்ள function அனைத்து தரவுகளையும் கையாளும்)
+};
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadBooks();
-    searchInput.addEventListener('input', filterBooks);
-    yearFilter.addEventListener('change', filterBooks);
-    resetFiltersBtn.addEventListener('click', resetFilters);
+let books = [];
+
+async function loadData() {
+    try {
+        // ஒருவேளை கோப்பாக இருந்தால்: 
+        const response = await fetch('list.json');
+        const data = await response.json();
+        
+        books = data.books;
+        document.getElementById('disclaimer-text').innerText = data.disclaimer;
+        
+        initTable(books);
+        setupYearFilter(books);
+    } catch (error) {
+        console.error("தரவுகளை ஏற்றுவதில் பிழை:", error);
+    }
+}
+
+function initTable(data) {
+    const tableBody = document.getElementById('tableBody');
+    const totalCount = document.getElementById('total-count');
+    const noResults = document.getElementById('noResults');
+    const table = document.getElementById('booksTable');
+    
+    tableBody.innerHTML = '';
+    totalCount.innerText = data.length;
+
+    if (data.length === 0) {
+        noResults.classList.remove('hidden');
+        table.classList.add('hidden');
+        return;
+    } else {
+        noResults.classList.add('hidden');
+        table.classList.remove('hidden');
+    }
+
+    data.forEach(book => {
+        const row = `
+            <tr>
+                <td>${book.sr_no}</td>
+                <td style="font-weight: 500; color: #1a237e;">${book.book_title}</td>
+                <td>${book.author_editor}</td>
+                <td><small>${book.isbn_number || '-'}</small></td>
+                <td><span class="badge">${book.year}</span></td>
+            </tr>
+        `;
+        tableBody.innerHTML += row;
+    });
+}
+
+// தேடல் வசதி
+document.getElementById('searchInput').addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    const filtered = books.filter(book => 
+        book.book_title.toLowerCase().includes(term) || 
+        book.author_editor.toLowerCase().includes(term) ||
+        (book.isbn_number && book.isbn_number.includes(term))
+    );
+    initTable(filtered);
 });
 
-async function loadBooks() {
-    showLoading(true);
-    try {
-        // நேரடி GitHub URL. CORS பிரச்சனை இருந்தால் proxy பயன்படுத்தலாம்.
-        const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json');
-        
-        if (!response.ok) throw new Error('Network response was not ok');
-        
-        const data = await response.json();
-        allBooks = data.books || [];
-        
-        totalBooksSpan.textContent = allBooks.length;
-        populateYearFilter(allBooks);
-        displayBooks(allBooks);
-        showLoading(false);
-    } catch (error) {
-        console.error('Error:', error);
-        showLoading(false);
-        displayError();
-    }
-}
-
-function showLoading(isLoading) {
-    loadingIndicator.style.display = isLoading ? 'block' : 'none';
-    booksTable.style.display = isLoading ? 'none' : 'table';
-}
-
-function populateYearFilter(books) {
-    const years = [...new Set(books.map(b => b.year).filter(y => y))].sort((a, b) => b - a);
-    years.forEach(year => {
-        const opt = document.createElement('option');
-        opt.value = year;
-        opt.textContent = year;
-        yearFilter.appendChild(opt);
-    });
-}
-
-function displayBooks(books) {
-    booksTbody.innerHTML = '';
+// ஆண்டு வாரியாகப் பிரித்தல்
+function setupYearFilter(data) {
+    const select = document.getElementById('yearFilter');
+    const years = [...new Set(data.map(book => book.year))].sort().reverse();
     
-    if (books.length === 0) {
-        noResultsDiv.style.display = 'block';
-        booksTable.style.display = 'none';
-        return;
+    years.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.innerText = year;
+        select.appendChild(option);
+    });
+}
+
+document.getElementById('yearFilter').addEventListener('change', (e) => {
+    const selectedYear = e.target.value;
+    if (selectedYear === 'all') {
+        initTable(books);
+    } else {
+        const filtered = books.filter(book => book.year === selectedYear);
+        initTable(filtered);
     }
+});
 
-    noResultsDiv.style.display = 'none';
-    booksTable.style.display = 'table';
-
-    books.forEach(book => {
-        const row = document.createElement('tr');
-        const pubDate = (book.publication_date === "01/01/1900" || !book.publication_date) ? "-" : book.publication_date;
-        
-        row.innerHTML = `
-            <td data-label="வ.எண்">${book.sr_no}</td>
-            <td data-label="புத்தகம்">${book.book_title}</td>
-            <td data-label="ஆசிரியர்">${book.author_editor}</td>
-            <td data-label="ISBN">${book.isbn_number || "-"}</td>
-            <td data-label="ஆண்டு">${book.year}</td>
-            <td data-label="தேதி">${pubDate}</td>
-        `;
-        booksTbody.appendChild(row);
-    });
-}
-
-function filterBooks() {
-    const search = searchInput.value.toLowerCase();
-    const year = yearFilter.value;
-
-    const filtered = allBooks.filter(book => {
-        const matchesSearch = !search || 
-            book.book_title.toLowerCase().includes(search) || 
-            book.author_editor.toLowerCase().includes(search) || 
-            (book.isbn_number && book.isbn_number.includes(search));
-        
-        const matchesYear = year === 'all' || book.year === year;
-        return matchesSearch && matchesYear;
-    });
-    displayBooks(filtered);
-}
-
-function resetFilters() {
-    searchInput.value = '';
-    yearFilter.value = 'all';
-    displayBooks(allBooks);
-}
-
-function displayError() {
-    booksTbody.innerHTML = `<tr><td colspan="6" class="error-state">தரவுகளைப் பெறுவதில் பிழை!</td></tr>`;
-}
+// பக்கத்தை ஏற்றும் போது
+window.onload = loadData;
