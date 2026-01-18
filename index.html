@@ -6,67 +6,64 @@
     <title>INAM PATHIPPAGAM - புத்தகப் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-container">
-                <div class="logo-wrapper">
-                    <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" alt="Inam Logo" class="brand-logo">
+            <div class="brand-section">
+                <div class="logo-container">
+                    <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" alt="Inam Logo" class="circular-logo">
                 </div>
-                <div class="header-text">
+                <div class="title-container">
                     <h1>INAM PATHIPPAGAM</h1>
-                    <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
+                    <p class="subtitle">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
                 </div>
             </div>
             
-            <div class="stats">
-                <div class="stat">
-                    <i class="fas fa-book-open"></i>
-                    <span id="total-books">0</span>
-                    <p>மொத்த புத்தகங்கள்</p>
-                </div>
-                <div class="stat">
-                    <i class="fas fa-calendar-check"></i>
-                    <span>2018 - 2026</span>
-                    <p>வெளியீட்டு ஆண்டுகள்</p>
+            <div class="stats-panel">
+                <div class="stat-box">
+                    <i class="fas fa-books"></i>
+                    <span id="total-books">...</span>
+                    <p>மொத்த நூல்கள்</p>
                 </div>
             </div>
         </header>
 
-        <div class="controls">
-            <div class="search-box">
+        <div class="search-filter-area">
+            <div class="search-input-wrapper">
                 <i class="fas fa-search"></i>
-                <input type="text" id="search" placeholder="புத்தகம் அல்லது ஆசிரியர் பெயர் மூலம் தேடுக...">
+                <input type="text" id="searchInput" placeholder="நூல் அல்லது ஆசிரியர் பெயர் மூலம் தேடுக...">
             </div>
-            <div class="filter-controls">
-                <select id="year-filter">
-                    <option value="all">அனைத்து ஆண்டுகள்</option>
-                </select>
-                <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
-            </div>
+            <select id="yearFilter">
+                <option value="all">அனைத்து ஆண்டுகள்</option>
+            </select>
+            <button id="resetBtn" class="btn-primary">மீட்டமை</button>
         </div>
 
-        <div class="table-container">
-            <div id="loading-indicator" class="loading-indicator">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>தரவுகள் ஏற்றப்படுகின்றன...</p>
+        <div class="content-area">
+            <div id="loader" class="loader-wrapper">
+                <div class="spinner"></div>
+                <p>தரவுகள் பதிவேற்றப்படுகின்றன...</p>
             </div>
-            <table id="books-table" style="display:none;">
-                <thead>
-                    <tr>
-                        <th>வ.எண்</th>
-                        <th>புத்தகத்தின் பெயர்</th>
-                        <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
-                        <th>ISBN எண்</th>
-                        <th>ஆண்டு</th>
-                    </tr>
-                </thead>
-                <tbody id="books-tbody"></tbody>
-            </table>
-            <div id="no-results" class="no-results" style="display:none;">
-                <p>முடிவுகள் எதுவும் கிடைக்கவில்லை!</p>
+
+            <div class="table-responsive">
+                <table id="booksTable" class="hidden">
+                    <thead>
+                        <tr>
+                            <th>வ.எண்</th>
+                            <th>புத்தகத்தின் பெயர்</th>
+                            <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
+                            <th>ISBN எண்</th>
+                            <th>ஆண்டு</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+            
+            <div id="emptyMsg" class="hidden no-data">
+                <p>தேடலுக்குரிய முடிவுகள் ஏதுமில்லை.</p>
             </div>
         </div>
 
