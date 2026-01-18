@@ -8,24 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<!-- Add this inside the table container section, before the table -->
-<div class="table-container">
-    <div class="loading-indicator" id="loading-indicator">
-        <i class="fas fa-spinner"></i>
-        <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
-    </div>
-    
-    <table id="books-table">
-        <!-- ... existing table code ... -->
-    </table>
-    
-    <div class="no-results" id="no-results">
-        <!-- ... existing no results code ... -->
-    </div>
-</div>
 <body>
     <div class="container">
-        <!-- Header Section -->
         <header>
             <div class="header-content">
                 <h1><i class="fas fa-book"></i> INAM PATHIPPAGAM</h1>
@@ -33,7 +17,7 @@
                 <div class="stats">
                     <div class="stat">
                         <i class="fas fa-book-open"></i>
-                        <span id="total-books">217</span>
+                        <span id="total-books">0</span>
                         <p>மொத்த புத்தகங்கள்</p>
                     </div>
                     <div class="stat">
@@ -50,67 +34,57 @@
             </div>
         </header>
 
-        <!-- Disclaimer -->
         <div class="disclaimer">
             <h3><i class="fas fa-exclamation-triangle"></i> பொறுப்புத் துறப்பு</h3>
             <p>இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
-            <p class="english">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
+            <p class="english">The authors are solely responsible for the opinions expressed in their works. Inam Publishing is not responsible in any way.</p>
         </div>
 
-        <!-- Filters and Controls -->
         <div class="controls">
             <div class="search-box">
                 <i class="fas fa-search"></i>
-                <input type="text" id="search" placeholder="புத்தகம், ஆசிரியர் அல்லது ISBN எண் மூலம் தேடுக...">
+                <input type="text" id="search" placeholder="புத்தகம், ஆசிரியர் அல்லது ISBN மூலம் தேடுக...">
             </div>
             <div class="filter-controls">
                 <select id="year-filter">
                     <option value="all">அனைத்து ஆண்டுகள்</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2024">2025</option>
-                    <option value="2024">2026</option>
                 </select>
                 <button id="reset-filters" class="btn-reset"><i class="fas fa-redo"></i> மீட்டமை</button>
             </div>
         </div>
 
-        <!-- Books Table -->
         <div class="table-container">
-            <table id="books-table">
+            <div class="loading-indicator" id="loading-indicator">
+                <i class="fas fa-spinner"></i>
+                <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
+            </div>
+            
+            <table id="books-table" style="display: none;">
                 <thead>
                     <tr>
-                        <th>வரிசை எண்</th>
+                        <th>வ.எண்</th>
                         <th>புத்தகத்தின் பெயர்</th>
-                        <th>ஆசிரியர் / தொகுப்பாசிரியர்</th>
+                        <th>ஆசிரியர்</th>
                         <th>ISBN எண்</th>
                         <th>ஆண்டு</th>
                         <th>வெளியீட்டு தேதி</th>
                     </tr>
                 </thead>
                 <tbody id="books-tbody">
-                    <!-- Books will be loaded here by JavaScript -->
-                </tbody>
+                    </tbody>
             </table>
-            <div class="no-results" id="no-results">
+
+            <div class="no-results" id="no-results" style="display: none;">
                 <i class="fas fa-search"></i>
                 <p>தேடலுக்கு பொருந்தக்கூடிய புத்தகங்கள் எதுவும் கிடைக்கவில்லை.</p>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer>
             <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
-            <p class="footer-info">இந்த பட்டியல் சரியான தகவல்களைக் கொண்டுள்ளதா என்பதை உறுதிப்படுத்த புத்தகங்களின் அசல் ஆவணங்களைச் சரிபார்க்கவும்.</p>
         </footer>
     </div>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
