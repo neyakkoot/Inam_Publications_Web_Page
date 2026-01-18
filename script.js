@@ -1,18 +1,16 @@
 let allBooks = [];
 
-async function initInamApp() {
+async function startApp() {
+    const tbody = document.getElementById('tableBody');
     const table = document.getElementById('booksTable');
-    const loader = document.getElementById('loader');
-    const totalSpan = document.getElementById('total-books');
+    const loading = document.getElementById('loading');
 
     try {
-        // Cache பிரச்சனையைத் தவிர்க்க Timestamp
+        // Cache பிரச்சனையைத் தவிர்க்க Timestamp சேர்க்கப்பட்டுள்ளது
         const response = await fetch('https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json?v=' + Date.now());
         const data = await response.json();
         allBooks = data.books;
 
-        totalSpan.textContent = allBooks.length;
-        
         // Year Filter
         const years = [...new Set(allBooks.map(b => b.year))].sort().reverse();
         const yFilter = document.getElementById('yearFilter');
@@ -22,63 +20,54 @@ async function initInamApp() {
             yFilter.appendChild(opt);
         });
 
-        renderBooks(allBooks);
-        loader.classList.add('hidden');
-        table.classList.remove('hidden');
+        renderData(allBooks);
+        loading.style.display = 'none';
+        table.style.display = 'table';
 
     } catch (err) {
-        console.error("Loading Error:", err);
-        loader.innerHTML = "<p style='color:red'>தரவுகளைப் பெற முடியவில்லை!</p>";
+        console.error("Error:", err);
+        loading.innerHTML = "<p style='color:red'>தகவல்களை ஏற்ற முடியவில்லை!</p>";
     }
 }
 
-function renderBooks(data) {
+function renderData(data) {
     const tbody = document.getElementById('tableBody');
-    const noData = document.getElementById('noData');
-    const table = document.getElementById('booksTable');
-    
     tbody.innerHTML = '';
     
     if (data.length === 0) {
-        noData.classList.remove('hidden');
-        table.classList.add('hidden');
+        document.getElementById('no-data').style.display = 'block';
+        document.getElementById('booksTable').style.display = 'none';
         return;
     }
-
-    noData.classList.add('hidden');
-    table.classList.remove('hidden');
+    
+    document.getElementById('no-data').style.display = 'none';
+    document.getElementById('booksTable').style.display = 'table';
 
     data.forEach(book => {
         const row = `<tr>
             <td>${book.sr_no}</td>
-            <td style="color:var(--primary); font-weight:600;">${book.book_title}</td>
+            <td style="font-weight:600; color:#1a237e;">${book.book_title}</td>
             <td>${book.author_editor}</td>
-            <td><small>${book.isbn_number || '-'}</small></td>
-            <td><span class="year-badge">${book.year}</span></td>
+            <td>${book.isbn_number || '-'}</td>
+            <td>${book.year}</td>
         </tr>`;
         tbody.insertAdjacentHTML('beforeend', row);
     });
 }
 
-// Search & Filter Listeners
-document.getElementById('searchInput').addEventListener('input', e => {
-    const term = e.target.value.toLowerCase();
+// Search & Filter
+document.getElementById('searchInput').addEventListener('input', () => {
+    const term = document.getElementById('searchInput').value.toLowerCase();
     const year = document.getElementById('yearFilter').value;
     const filtered = allBooks.filter(b => 
         (b.book_title.toLowerCase().includes(term) || b.author_editor.toLowerCase().includes(term)) &&
         (year === 'all' || b.year === year)
     );
-    renderBooks(filtered);
+    renderData(filtered);
 });
 
 document.getElementById('yearFilter').addEventListener('change', () => {
     document.getElementById('searchInput').dispatchEvent(new Event('input'));
 });
 
-document.getElementById('resetBtn').addEventListener('click', () => {
-    document.getElementById('searchInput').value = '';
-    document.getElementById('yearFilter').value = 'all';
-    renderBooks(allBooks);
-});
-
-initInamApp();
+startApp();
