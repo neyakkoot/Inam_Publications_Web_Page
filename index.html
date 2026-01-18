@@ -3,69 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inam Pathippagam - புத்தகப் பட்டியல்</title>
+    <title>Inam Pathippagam - நூல்களின் பட்டியல்</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="glass-bg"></div>
     <div class="container">
         <header class="main-header">
-            <div class="header-top">
+            <div class="header-content">
                 <div class="logo-wrapper">
                     <img src="https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/inam_logo.png" alt="Inam Logo" class="brand-logo">
                 </div>
-                <div class="brand-info">
+                <div class="brand-text">
                     <h1>INAM PATHIPPAGAM</h1>
                     <p class="tagline">பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் வெளிவந்துள்ள நூல்களின் பட்டியல்</p>
                 </div>
             </div>
             
-            <div class="disclaimer-card">
-                <p class="tam-desc">இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
-                <p class="eng-desc">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
-                <div class="header-actions">
-                    <a href="https://archive.org/details/@inam_pathippagam" target="_blank" class="archive-btn">
-                        <i class="fas fa-archive"></i> Wrappers Visit Internet Archives
-                    </a>
-                </div>
-            </div>
-
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <i class="fas fa-book"></i>
-                    <div class="stat-val" id="total-books">0</div>
-                    <div class="stat-label">மொத்த நூல்கள்</div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-calendar-alt"></i>
-                    <div class="stat-val">2018-2026</div>
-                    <div class="stat-label">வெளியீட்டு காலம்</div>
-                </div>
+            <div class="info-card">
+                <p class="tam-note">இதுவரை இனம் பதிப்பகத்தின் மூலம் பன்னாட்டுத் தரக்குறியீட்டு எண்ணுடன் (ISBN) வெளிவந்துள்ள நூல்களின் பட்டியல் கீழே தரப்பெற்றுள்ளது. இந்தத் தலைப்பில் உள்ள கருத்திற்கு அந்தந்த நூலாசிரியர்களே பொறுப்பாவா்கள். எந்தவிதத்திலும் இனம் பதிப்பகம் பொறுப்பேற்காது.</p>
+                <p class="eng-note">Below is the list of books published with International Standard Book Number (ISBN) so far by Inam Publishing. The authors are solely responsible for the opinions expressed in their works.</p>
+                <a href="https://archive.org/details/@inam_pathippagam" target="_blank" class="archive-btn">
+                    <i class="fas fa-archive"></i> Wrappers Visit Internet Archives
+                </a>
             </div>
         </header>
 
-        <div class="control-panel">
-            <div class="search-container">
+        <div class="control-area">
+            <div class="search-box">
                 <i class="fas fa-search"></i>
                 <input type="text" id="searchInput" placeholder="நூல், ஆசிரியர் அல்லது ISBN மூலம் தேடுக...">
             </div>
-            <div class="filter-group">
-                <select id="yearFilter">
-                    <option value="all">அனைத்து ஆண்டுகள்</option>
-                </select>
-                <button id="resetBtn" class="icon-btn"><i class="fas fa-sync-alt"></i></button>
-            </div>
+            <select id="yearFilter">
+                <option value="all">அனைத்து ஆண்டுகள்</option>
+            </select>
         </div>
 
-        <main class="content-card">
-            <div id="loader" class="loader">
-                <div class="dot-spinner"></div>
+        <div class="table-card">
+            <div id="loading" class="loading-state">
+                <i class="fas fa-spinner fa-spin"></i>
                 <p>நூல்களைத் தேடுகிறது...</p>
             </div>
             <div class="table-responsive">
-                <table id="booksTable" class="hidden">
+                <table id="booksTable" style="display: none;">
                     <thead>
                         <tr>
                             <th>வ.எண்</th>
@@ -78,13 +59,12 @@
                     <tbody id="tableBody"></tbody>
                 </table>
             </div>
-            <div id="noData" class="hidden empty-state">
-                <i class="fas fa-search-minus"></i>
-                <p>தேடலுக்குரிய தகவல்கள் ஏதுமில்லை!</p>
+            <div id="no-data" style="display: none; text-align: center; padding: 20px;">
+                <p>தகவல்கள் ஏதுமில்லை.</p>
             </div>
-        </main>
+        </div>
 
-        <footer class="main-footer">
+        <footer>
             <p>© 2026 INAM PATHIPPAGAM. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
         </footer>
     </div>
