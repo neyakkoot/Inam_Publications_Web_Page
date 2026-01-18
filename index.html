@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+<!-- Add this inside the table container section, before the table -->
+<div class="table-container">
+    <div class="loading-indicator" id="loading-indicator">
+        <i class="fas fa-spinner"></i>
+        <p>புத்தக பட்டியலை ஏற்றுகிறது...</p>
+    </div>
+    
+    <table id="books-table">
+        <!-- ... existing table code ... -->
+    </table>
+    
+    <div class="no-results" id="no-results">
+        <!-- ... existing no results code ... -->
+    </div>
+</div>
 <body>
     <div class="container">
         <!-- Header Section -->
