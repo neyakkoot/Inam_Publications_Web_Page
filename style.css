@@ -1,292 +1,386 @@
-/* அடிப்படை அமைப்புகள் */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans Tamil', 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Noto Sans Tamil', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
+    direction: ltr;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
-/* தலைப்பு பகுதி */
+/* Header Styles */
 header {
-    background: linear-gradient(135deg, #1e5799 0%, #207cca 100%);
+    background: linear-gradient(135deg, #1e5799 0%, #207cca 51%, #2989d8 100%);
     color: white;
-    padding: 2rem 0;
+    padding: 30px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #f8c102;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.header-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
+.header-content h1 i {
+    color: #f8c102;
+}
+
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     opacity: 0.9;
-}
-
-/* முக்கிய உள்ளடக்கம் */
-main {
-    padding: 2rem 0;
-}
-
-.intro {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    margin-bottom: 2rem;
-    border-right: 5px solid #1e5799;
-}
-
-.intro p {
-    font-size: 1.05rem;
-    text-align: justify;
-}
-
-/* வடிகட்டு பகுதி */
-.filter-section {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    margin-bottom: 2rem;
-}
-
-.filter-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.filter-group {
-    flex: 1;
-    min-width: 250px;
-}
-
-.filter-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #1e5799;
-}
-
-.filter-group select {
-    width: 100%;
-    padding: 0.75rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-family: 'Noto Sans Tamil', sans-serif;
-    font-size: 1rem;
-    background-color: white;
-    cursor: pointer;
-    transition: border-color 0.3s;
-}
-
-.filter-group select:hover, .filter-group select:focus {
-    border-color: #1e5799;
-    outline: none;
+    margin-bottom: 25px;
 }
 
 .stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px 25px;
+    border-radius: 10px;
+    min-width: 150px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat i {
+    font-size: 2rem;
+    color: #f8c102;
+    margin-bottom: 10px;
+}
+
+.stat span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Disclaimer */
+.disclaimer {
+    background-color: #fff9e6;
+    border-left: 5px solid #ffc107;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 8px;
+}
+
+.disclaimer h3 {
+    color: #d68910;
+    margin-bottom: 10px;
+    display: flex;
     align-items: center;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+    gap: 10px;
 }
 
-#book-count {
-    font-weight: 600;
-    color: #1e5799;
-    font-size: 1.1rem;
+.disclaimer p {
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
-.year-badge {
+.disclaimer .english {
+    font-style: italic;
+    color: #666;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaeaea;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #1e5799;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 87, 153, 0.1);
+}
+
+.filter-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-controls select {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+.btn-reset {
+    padding: 12px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-reset:hover {
+    background-color: #5a6268;
+}
+
+/* Table Container */
+.table-container {
+    padding: 0 25px 25px;
+    overflow-x: auto;
+}
+
+#books-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#books-table thead {
     background-color: #1e5799;
     color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+}
+
+#books-table th {
+    padding: 18px 15px;
+    text-align: left;
     font-weight: 600;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* நூல்கள் கட்டம் */
-.books-container {
-    min-height: 400px;
+#books-table th:last-child {
+    border-right: none;
 }
 
-.loading {
-    text-align: center;
-    padding: 3rem;
-    font-size: 1.2rem;
+#books-table tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+#books-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+#books-table td {
+    padding: 16px 15px;
+    vertical-align: top;
+}
+
+#books-table td:nth-child(1) {
+    font-weight: 600;
     color: #1e5799;
-}
-
-.loading i {
-    margin-right: 10px;
-    font-size: 1.5rem;
-}
-
-.no-books {
     text-align: center;
-    padding: 4rem 2rem;
-    color: #666;
+    width: 70px;
 }
 
-.no-books i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #ccc;
+#books-table td:nth-child(2) {
+    font-weight: 600;
+    color: #333;
+    min-width: 250px;
 }
 
-.no-books p {
-    font-size: 1.2rem;
+#books-table td:nth-child(3) {
+    min-width: 250px;
 }
 
-.hidden {
+#books-table td:nth-child(4) {
+    font-family: monospace;
+    color: #2c3e50;
+    min-width: 150px;
+}
+
+#books-table td:nth-child(5) {
+    text-align: center;
+    min-width: 80px;
+}
+
+#books-table td:nth-child(6) {
+    min-width: 120px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 50px 20px;
+    color: #777;
     display: none;
 }
 
-.books-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+.no-results i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ccc;
 }
 
-.book-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.book-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.book-cover {
-    height: 180px;
-    background-color: #f0f7ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1e5799;
-    font-size: 3.5rem;
-}
-
-.book-info {
-    padding: 1.5rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.book-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-    color: #1e5799;
-    line-height: 1.4;
-    flex-grow: 1;
-}
-
-.book-details {
-    margin-bottom: 1rem;
-    color: #555;
-}
-
-.book-details p {
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-
-.book-details i {
-    width: 20px;
-    margin-right: 8px;
-    color: #1e5799;
-}
-
-.book-year {
-    display: inline-block;
-    background-color: #eef5ff;
-    color: #1e5799;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: auto;
-}
-
-/* முடிப்புப் பகுதி */
+/* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #ddd;
-    padding: 2rem 0;
-    margin-top: 3rem;
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
+    padding: 25px;
+    margin-top: 20px;
 }
 
 footer p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
 }
 
-.footer-note {
+.footer-info {
     font-size: 0.9rem;
-    color: #aaa;
+    opacity: 0.8;
 }
 
-/* பதிலளிக்கும் வடிவமைப்பு */
+/* Responsive Design */
+@media (max-width: 992px) {
+    .stats {
+        gap: 20px;
+    }
+    
+    .stat {
+        min-width: 130px;
+        padding: 12px 18px;
+    }
+    
+    .stat span {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .stat {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+    
+    .search-box {
+        max-width: 100%;
     }
     
     .filter-controls {
-        flex-direction: column;
-        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
     }
     
-    .filter-group {
-        min-width: 100%;
+    #books-table {
+        font-size: 0.9rem;
     }
     
-    .books-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    #books-table th, #books-table td {
+        padding: 12px 10px;
     }
 }
 
 @media (max-width: 576px) {
-    .books-grid {
-        grid-template-columns: 1fr;
+    body {
+        padding: 10px;
     }
     
-    header h1 {
-        font-size: 1.7rem;
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        border-radius: 10px;
+    }
+    
+    header, .disclaimer, .controls, .table-container {
+        padding: 15px;
+    }
+    
+    #books-table {
+        font-size: 0.85rem;
+    }
+    
+    #books-table th, #books-table td {
+        padding: 10px 8px;
+    }
+    
+    .filter-controls {
         flex-direction: column;
         gap: 10px;
+    }
+    
+    .filter-controls select, .btn-reset {
+        width: 100%;
     }
 }
