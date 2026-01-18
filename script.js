@@ -1,3 +1,27 @@
+
+// Alternative method using a CORS proxy if needed
+async function loadBooksFromGitHub() {
+    try {
+        showLoading();
+        
+        // Using CORS proxy to avoid CORS issues
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://raw.githubusercontent.com/neyakkoot/Inam_Publications_Web_Page/main/list.json';
+        
+        const response = await fetch(proxyUrl + targetUrl, {
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        });
+        
+        // Rest of the code remains the same...
+        // ... (same as previous loadBooksFromGitHub function)
+    } catch (error) {
+        console.error('Error loading books:', error);
+        hideLoading();
+        displayError();
+    }
+}
 // Add these functions to your script.js
 
 // Function to show loading indicator
